@@ -43,6 +43,8 @@ class DataValidator:
         "antecedentes_de_mastitis",
         "humedad",
         "temperatura",
+        "ph_leche",
+        "conductividad_leche_ms_cm",
         TARGET_COLUMN,
     )
 
@@ -59,10 +61,13 @@ class DataValidator:
         "antecedentes_de_mastitis",
         "humedad",
         "temperatura",
+        "ph_leche",
+        "conductividad_leche_ms_cm",
     )
 
     REQUIRED_COLUMNS = (GROUP_COLUMN, *FEATURE_COLUMNS, TARGET_COLUMN)
 
+    # Rangos amplios de calidad: no son umbrales de diagnóstico.
     CLINICAL_RANGES = {
         "edad": (1.0, 25.0),
         "numero_de_partos": (0.0, 20.0),
@@ -70,6 +75,8 @@ class DataValidator:
         "humedad": (0.0, 100.0),
         "temperatura": (-20.0, 50.0),
         "estado_de_vacunacion": (0.0, 3.0),
+        "ph_leche": (5.5, 8.0),
+        "conductividad_leche_ms_cm": (2.0, 15.0),
     }
 
     INTEGER_COLUMNS = (
@@ -94,20 +101,25 @@ class DataValidator:
         self, data: pd.DataFrame
     ) -> tuple[pd.DataFrame, DataQualityReport]:
         """Normaliza números y comprueba el contrato del dataset."""
-        self._validate_schema(data)
 
+        self._validate_schema(data)
         cleaned = data.copy(deep=True)
+
         coercions_to_missing: dict[str, int] = {}
 
         for column in self.NUMERIC_COLUMNS:
             parsed = self._to_numeric(cleaned[column])
-            coerced = int((cleaned[column].notna() & parsed.isna()).sum())
+
+            coerced = int(
+                (cleaned[column].notna() & parsed.isna()).sum()
+            )
+
             coercions_to_missing[column] = coerced
 
             if coerced:
                 raise DataValidationError(
-                    f"La columna '{column}' tiene {coerced} valor(es) no numéricos. "
-                    "Corrija el origen antes de entrenar."
+                    f"La columna '{column}' tiene {coerced} valor(es) "
+                    "no numéricos. Corrija el origen antes de entrenar."
                 )
 
             cleaned[column] = parsed
@@ -127,7 +139,9 @@ class DataValidator:
                 for column in self.REQUIRED_COLUMNS
             },
             coercions_to_missing=coercions_to_missing,
-            unique_farms=int(cleaned[self.GROUP_COLUMN].nunique(dropna=True)),
+            unique_farms=int(
+                cleaned[self.GROUP_COLUMN].nunique(dropna=True)
+            ),
         )
 
         return cleaned, report
@@ -145,7 +159,7 @@ class DataValidator:
 
     @staticmethod
     def _to_numeric(series: pd.Series) -> pd.Series:
-        """Convierte números con coma decimal o separadores de miles a float."""
+        """Convierte números con coma decimal o separadores de miles."""
 
         def normalize(value: Any) -> Any:
             if pd.isna(value) or isinstance(value, (int, float, np.number)):
@@ -159,6 +173,7 @@ class DataValidator:
             if "," in text and "." in text:
                 if text.rfind(",") > text.rfind("."):
                     return text.replace(".", "").replace(",", ".")
+
                 return text.replace(",", "")
 
             return text.replace(",", ".")
@@ -167,7 +182,12 @@ class DataValidator:
 
     def _validate_required_non_null(self, data: pd.DataFrame) -> None:
         non_nullable = (self.GROUP_COLUMN, self.TARGET_COLUMN)
-        failures = [column for column in non_nullable if data[column].isna().any()]
+
+        failures = [
+            column
+            for column in non_nullable
+            if data[column].isna().any()
+        ]
 
         if failures:
             raise DataValidationError(
@@ -175,15 +195,22 @@ class DataValidator:
                 + ", ".join(failures)
             )
 
-    def _validate_ranges_and_allowed_values(self, data: pd.DataFrame) -> None:
+    def _validate_ranges_and_allowed_values(
+        self,
+        data: pd.DataFrame,
+    ) -> None:
         violations: list[str] = []
 
         for column, (minimum, maximum) in self.CLINICAL_RANGES.items():
-            invalid = data[column].notna() & ~data[column].between(minimum, maximum)
+            invalid = (
+                data[column].notna()
+                & ~data[column].between(minimum, maximum)
+            )
 
             if invalid.any():
                 violations.append(
-                    f"{column}: {int(invalid.sum())} fuera de [{minimum}, {maximum}]"
+                    f"{column}: {int(invalid.sum())} fuera de "
+                    f"[{minimum}, {maximum}]"
                 )
 
         for column in self.INTEGER_COLUMNS:
@@ -191,20 +218,28 @@ class DataValidator:
             invalid = ~np.isclose(values, np.round(values))
 
             if invalid.any():
-                violations.append(f"{column}: debe contener valores enteros")
+                violations.append(
+                    f"{column}: debe contener valores enteros"
+                )
 
         for column, allowed in self.ALLOWED_VALUES.items():
             invalid = data[column].notna() & ~data[column].isin(allowed)
 
             if invalid.any():
-                expected = ", ".join(str(int(value)) for value in sorted(allowed))
-                violations.append(f"{column}: valores permitidos {{{expected}}}")
+                expected = ", ".join(
+                    str(int(value)) for value in sorted(allowed)
+                )
+
+                violations.append(
+                    f"{column}: valores permitidos {{{expected}}}"
+                )
 
         if violations:
             raise DataValidationError("; ".join(violations))
 
     def _validate_group_values(self, data: pd.DataFrame) -> None:
         """Exige finca válida, pero permite nulos de features para imputación."""
+
         if data[self.GROUP_COLUMN].isna().any():
             raise DataValidationError(
                 "No se admiten nulos o textos vacíos en finca."
