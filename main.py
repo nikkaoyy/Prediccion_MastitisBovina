@@ -1,4 +1,4 @@
-"""Orquestador CRISP-ML(Q) del componente de árbol de decisión."""
+"""Orquestador CRISP-ML(Q) del componente de aprendizaje automático."""
 
 from __future__ import annotations
 
@@ -10,7 +10,10 @@ from typing import Any
 import pandas as pd
 
 from src.data.dataValidation import DataValidator
+from src.data.dummyDataGenerator import generate_dummy_data
 from src.models.DecisionTreeTraining import DecisionTreeModelTrainer
+from src.models.RandomForest import RandomForestModelTrainer
+from src.models.LogisticalRegresion import LogisticRegressionModelTrainer
 
 
 PROJECT_ROOT = Path(__file__).resolve().parent
@@ -23,19 +26,21 @@ def run(
     data_path: str | Path,
     artifacts_dir: str | Path = "src/data/artifacts",
     reports_dir: str | Path = "demo_reports",
+    use_dummy: bool = False,
 ) -> dict[str, Any]:
-    """Ejecuta el flujo CRISP-ML(Q) completo."""
+    """Ejecuta el flujo CRISP-ML(Q) completo para múltiples modelos."""
 
-    data_path = Path(data_path)
     artifacts_dir = Path(artifacts_dir)
     reports_dir = Path(reports_dir)
 
-    if not data_path.is_file():
-        raise FileNotFoundError(
-            f"No se encontró el dataset: {data_path}"
-        )
-
-    raw_data = pd.read_csv(data_path)
+    if use_dummy:
+        print("\n=== Usando Dummy Data ===")
+        raw_data = generate_dummy_data(n_samples=200, random_state=42)
+    else:
+        data_path = Path(data_path)
+        if not data_path.is_file():
+            raise FileNotFoundError(f"No se encontró el dataset: {data_path}")
+        raw_data = pd.read_csv(data_path)
 
     validator = DataValidator()
     clean_data, quality_report = validator.validate_and_clean(raw_data)
@@ -44,82 +49,81 @@ def run(
     y = clean_data[DataValidator.TARGET_COLUMN].astype(int)
     groups = clean_data[DataValidator.GROUP_COLUMN]
 
-    trainer = DecisionTreeModelTrainer(
-        n_splits=5,
-        random_state=42,
-    )
+    trainers = {
+        "decision_tree": DecisionTreeModelTrainer(n_splits=5, random_state=42),
+        "random_forest": RandomForestModelTrainer(n_splits=5, random_state=42),
+        "logistic_regression": LogisticRegressionModelTrainer(n_splits=5, random_state=42),
+    }
 
-    trainer.fit(X=X, y=y, groups=groups)
-
-    evaluation = trainer.evaluate_grouped_cv(
-        X=X,
-        y=y,
-        groups=groups,
-    )
-
-    model_path = trainer.persist_model(
-        artifacts_dir / "mastitis_decision_tree_pipeline.pkl"
-    )
-
-    confusion_matrix_path = trainer.save_confusion_matrix(
-        evaluation,
-        reports_dir / "matriz_confusion_groupkfold.png",
-    )
-
-    tree_diagram_path = trainer.save_tree_diagram(
-        reports_dir / "arbol_decision_mastitis.png"
-    )
-
-    summary: dict[str, Any] = {
+    results: dict[str, Any] = {
         "data_quality": quality_report.to_dict(),
-        "selection_metric": "f1",
-        "best_grouped_cv_f1": trainer.best_score_,
-        "best_params": trainer.best_params_,
-        "evaluation_protocol": (
-            "Validación cruzada agrupada anidada: "
-            "GroupKFold(n_splits=5) externo por finca y "
-            "GroupKFold(n_splits=4) interno para tuning."
-        ),
-        "evaluation": evaluation.serializable_summary(),
-        "artifacts": {
-            "model": str(model_path),
-            "confusion_matrix": str(confusion_matrix_path),
-            "tree_diagram": str(tree_diagram_path),
-        },
+        "models": {}
     }
 
     reports_dir.mkdir(parents=True, exist_ok=True)
-
-    metrics_path = reports_dir / "reporte_metricas_groupkfold.json"
-
-    metrics_path.write_text(
-        json.dumps(summary, ensure_ascii=False, indent=2),
-        encoding="utf-8",
-    )
-
+    
     print("\n=== Calidad de datos ===")
     print(json.dumps(quality_report.to_dict(), ensure_ascii=False, indent=2))
 
-    print("\n=== Tuning agrupado ===")
-    print(f"Mejor F1 GroupKFold: {trainer.best_score_:.4f}")
-    print(f"Mejores parámetros: {trainer.best_params_}")
+    for model_name, trainer in trainers.items():
+        print(f"\n=== Entrenando {model_name} ===")
+        
+        trainer.fit(X=X, y=y, groups=groups)
 
-    print("\n=== Evaluación OOF por finca ===")
+        evaluation = trainer.evaluate_grouped_cv(X=X, y=y, groups=groups)
 
-    for metric, value in evaluation.aggregate_metrics.items():
-        print(f"{metric}: {value:.4f}")
+        model_path = trainer.persist_model(
+            artifacts_dir / f"mastitis_{model_name}_pipeline.pkl"
+        )
 
-    print(f"Modelo persistido: {model_path}")
-    print(f"Reporte de métricas: {metrics_path}")
+        # Matriz de confusión para todos los modelos
+        confusion_matrix_path = reports_dir / f"matriz_confusion_{model_name}.png"
+        
+        if hasattr(trainer, 'save_confusion_matrix'):
+            trainer.save_confusion_matrix(evaluation, confusion_matrix_path)
+            
+        # Árbol de decisión diagrama específico
+        tree_diagram_path = None
+        if model_name == "decision_tree" and hasattr(trainer, 'save_tree_diagram'):
+            tree_diagram_path = trainer.save_tree_diagram(
+                reports_dir / "arbol_decision_mastitis.png"
+            )
 
-    return summary
+        print(f"Mejor F1 GroupKFold: {trainer.best_score_:.4f}")
+        print(f"Mejores parámetros: {trainer.best_params_}")
+
+        print("=== Evaluación OOF por finca ===")
+        for metric, value in evaluation.aggregate_metrics.items():
+            print(f"{metric}: {value:.4f}")
+
+        model_summary = {
+            "selection_metric": "f1",
+            "best_grouped_cv_f1": trainer.best_score_,
+            "best_params": trainer.best_params_,
+            "evaluation": evaluation.serializable_summary(),
+            "artifacts": {
+                "model": str(model_path),
+                "confusion_matrix": str(confusion_matrix_path) if hasattr(trainer, 'save_confusion_matrix') else None,
+                "tree_diagram": str(tree_diagram_path) if tree_diagram_path else None,
+            },
+        }
+        
+        results["models"][model_name] = model_summary
+
+    metrics_path = reports_dir / "reporte_metricas_global.json"
+    metrics_path.write_text(
+        json.dumps(results, ensure_ascii=False, indent=2),
+        encoding="utf-8",
+    )
+
+    print(f"\nReporte global guardado en: {metrics_path}")
+
+    return results
 
 
 def parse_args() -> argparse.Namespace:
-    """Define CLI para usar otro CSV sin modificar código."""
-
     parser = argparse.ArgumentParser(
-        description="Entrena el modelo de mastitis."
+        description="Entrena los modelos de mastitis."
     )
 
     parser.add_argument(
@@ -140,6 +144,12 @@ def parse_args() -> argparse.Namespace:
         default=Path("demo_reports"),
     )
 
+    parser.add_argument(
+        "--use-dummy",
+        action="store_true",
+        help="Utiliza datos sintéticos generados automáticamente para pruebas rápidas."
+    )
+
     return parser.parse_args()
 
 
@@ -150,4 +160,5 @@ if __name__ == "__main__":
         args.data,
         args.artifacts_dir,
         args.reports_dir,
+        args.use_dummy,
     )

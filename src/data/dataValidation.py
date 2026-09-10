@@ -74,7 +74,7 @@ class DataValidator:
         "volumen_de_leche": (0.0, 100.0),
         "humedad": (0.0, 100.0),
         "temperatura": (-20.0, 50.0),
-        "estado_de_vacunacion": (0.0, 3.0),
+        "estado_de_vacunacion": (0.0, 1.0),
         "ph_leche": (5.5, 8.0),
         "conductividad_leche_ms_cm": (2.0, 15.0),
     }
@@ -92,7 +92,7 @@ class DataValidator:
     ALLOWED_VALUES = {
         "etapa_de_lactancia": {0.0, 1.0},
         "frecuencia_de_ordeno": {2.0},
-        "estado_de_vacunacion": {0.0, 1.0, 2.0, 3.0},
+        "estado_de_vacunacion": {0.0, 1.0},
         "antecedentes_de_mastitis": {0.0, 1.0},
         TARGET_COLUMN: {0.0, 1.0},
     }
