@@ -1,0 +1,5 @@
+__pycache__/
+*.py[cod]
+.venv/
+src/data/artifacts/
+demo_reports/
