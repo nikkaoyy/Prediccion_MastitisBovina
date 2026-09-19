@@ -14,7 +14,7 @@ DEFAULT_DATASET = (
     PROJECT_ROOT / "data" / "raw" / "datos_entrenamiento_mastitis-v3.csv"
 )
 
-DEFAULT_ARTIFACTS_DIR = Path("src/data/artifacts")
+DEFAULT_ARTIFACTS_DIR = PROJECT_ROOT / "src/data/artifacts"
 
 
 def parse_args() -> argparse.Namespace:
@@ -43,7 +43,7 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--reports-dir",
         type=Path,
-        default=Path("demo_reports"),
+        default=PROJECT_ROOT / "demo_reports",
         help="Directorio de matrices, diagrama y reporte JSON.",
     )
 

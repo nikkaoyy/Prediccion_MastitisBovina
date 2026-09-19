@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
 from dataclasses import dataclass
 from pathlib import Path
 from typing import Any
@@ -21,6 +25,7 @@ from sklearn.metrics import (
     recall_score,
     roc_auc_score,
 )
+from sklearn.metrics import make_scorer
 from sklearn.model_selection import GridSearchCV, GroupKFold
 from sklearn.pipeline import Pipeline
 from sklearn.tree import DecisionTreeClassifier, plot_tree
@@ -58,11 +63,11 @@ class DecisionTreeModelTrainer:
     """Gestiona tuning, GroupKFold y persistencia del modelo."""
 
     DEFAULT_PARAM_GRID: dict[str, list[Any]] = {
-        "classifier__criterion": ["gini", "entropy"],
-        "classifier__max_depth": [3, 5, 8, None],
-        "classifier__min_samples_split": [2, 5, 10],
-        "classifier__min_samples_leaf": [1, 2, 5],
-        "classifier__class_weight": [None, "balanced"],
+        "classifier__criterion": ["gini"],
+        "classifier__max_depth": [5, None],
+        "classifier__min_samples_split": [2],
+        "classifier__min_samples_leaf": [1],
+        "classifier__class_weight": ["balanced"],
     }
 
     def __init__(
@@ -329,7 +334,7 @@ class DecisionTreeModelTrainer:
         return GridSearchCV(
             estimator=self._build_base_pipeline(),
             param_grid=self.param_grid,
-            scoring="f1",
+            scoring=make_scorer(f1_score, zero_division=0),
             cv=GroupKFold(n_splits=n_splits),
             n_jobs=self.n_jobs,
             refit=True,

@@ -24,8 +24,8 @@ DEFAULT_DATASET = (
 
 def run(
     data_path: str | Path,
-    artifacts_dir: str | Path = "src/data/artifacts",
-    reports_dir: str | Path = "demo_reports",
+    artifacts_dir: str | Path = PROJECT_ROOT / "src/data/artifacts",
+    reports_dir: str | Path = PROJECT_ROOT / "demo_reports",
     use_dummy: bool = False,
 ) -> dict[str, Any]:
     """Ejecuta el flujo CRISP-ML(Q) completo para múltiples modelos."""
@@ -135,13 +135,13 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--artifacts-dir",
         type=Path,
-        default=Path("src/data/artifacts"),
+        default=PROJECT_ROOT / "src/data/artifacts",
     )
 
     parser.add_argument(
         "--reports-dir",
         type=Path,
-        default=Path("demo_reports"),
+        default=PROJECT_ROOT / "demo_reports",
     )
 
     parser.add_argument(

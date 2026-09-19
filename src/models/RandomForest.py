@@ -2,6 +2,10 @@
 
 from __future__ import annotations
 
+import sys
+from pathlib import Path
+sys.path.insert(0, str(Path(__file__).resolve().parents[2]))
+
 from pathlib import Path
 from typing import Any
 
@@ -24,14 +28,15 @@ from sklearn.metrics import (
     recall_score,
     roc_auc_score,
 )
+from sklearn.metrics import make_scorer
 
 class RandomForestModelTrainer:
     """Gestiona tuning, GroupKFold y persistencia del modelo Random Forest."""
 
     DEFAULT_PARAM_GRID: dict[str, list[Any]] = {
-        "classifier__n_estimators": [50, 100],
-        "classifier__max_depth": [5, 10, None],
-        "classifier__min_samples_split": [2, 5],
+        "classifier__n_estimators": [50],
+        "classifier__max_depth": [5, None],
+        "classifier__min_samples_split": [2],
         "classifier__class_weight": ["balanced"],
     }
 
@@ -188,7 +193,7 @@ class RandomForestModelTrainer:
         return GridSearchCV(
             estimator=self._build_base_pipeline(),
             param_grid=self.param_grid,
-            scoring="f1",
+            scoring=make_scorer(f1_score, zero_division=0),
             cv=GroupKFold(n_splits=n_splits),
             n_jobs=self.n_jobs,
             refit=True,
