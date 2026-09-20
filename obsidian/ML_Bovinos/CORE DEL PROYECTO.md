@@ -27,6 +27,9 @@ Esta bóveda de Obsidian está estructurada de manera modular y atómica para op
 5. **[[Hoja de Ruta y Próximos Pasos]]**  
    Plan de transición hacia la siguiente fase de desarrollo: curación y limpieza del CSV real, reestructuración de rutas, entrenamiento y persistencia de modelos reales, actualización del notebook Model_Analysis_and_Testing.ipynb (sustituyendo dummy data) y finalización del artículo científico y anteproyecto de grado.
 
+6. **[[Diagnóstico Dummy Data vs Datos Reales]]**  
+   Análisis exhaustivo de por qué los modelos entrenados con datos reales producen ~51% accuracy al evaluarse con dummy data generado por `dummyDataGenerator.py`. Explica la incompatibilidad distribucional (conductividad y pH no correlacionados en el generador sintético), la inversión del volumen de leche, la limitación económica de los medidores de conductividad eléctrica para pequeños productores del Altiplano Cundiboyacense, y las recomendaciones para trabajos futuros (conductividad relativa inter-cuartos, SCC, series temporales, modelo reducido sin equipos).
+
 ---
 
 ## 📊 Estado Actual del Proyecto (Semáforo de Progreso)
@@ -60,3 +63,4 @@ otebooks)** | ✅ **Completado** | Model_Analysis_and_Testing.ipynb actualmente 
 - [[Arquitectura CRISP-ML(Q) y Pipelines]]
 - [[Contexto Ahorro de Tokens para IAs]]
 - [[Hoja de Ruta y Próximos Pasos]]
+- [[Diagnóstico Dummy Data vs Datos Reales]]

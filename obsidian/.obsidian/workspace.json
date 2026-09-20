@@ -11,14 +11,10 @@
             "id": "7cd8967db44ce1aa",
             "type": "leaf",
             "state": {
-              "type": "markdown",
-              "state": {
-                "file": "ML_Bovinos/CORE DEL PROYECTO.md",
-                "mode": "source",
-                "source": false
-              },
-              "icon": "lucide-file",
-              "title": "CORE DEL PROYECTO"
+              "type": "graph",
+              "state": {},
+              "icon": "lucide-git-fork",
+              "title": "Vista gráfica"
             }
           }
         ]
@@ -99,7 +95,6 @@
             "state": {
               "type": "backlink",
               "state": {
-                "file": "ML_Bovinos/CORE DEL PROYECTO.md",
                 "collapseAll": false,
                 "extraContext": false,
                 "sortOrder": "alphabetical",
@@ -118,7 +113,6 @@
             "state": {
               "type": "outgoing-link",
               "state": {
-                "file": "ML_Bovinos/CORE DEL PROYECTO.md",
                 "linksCollapsed": false,
                 "unlinkedCollapsed": true
               },
@@ -161,7 +155,6 @@
             "state": {
               "type": "outline",
               "state": {
-                "file": "ML_Bovinos/CORE DEL PROYECTO.md",
                 "followCursor": false,
                 "showSearch": false,
                 "searchQuery": ""
@@ -189,5 +182,8 @@
     }
   },
   "active": "7cd8967db44ce1aa",
-  "lastOpenFiles": []
+  "lastOpenFiles": [
+    "ML_Bovinos/CORE DEL PROYECTO.md",
+    "ML_Bovinos/Diagnóstico Dummy Data vs Datos Reales.md"
+  ]
 }
