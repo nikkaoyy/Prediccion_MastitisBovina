@@ -97,7 +97,7 @@ El análisis de correlación de Pearson con respecto a la variable objetivo `mas
    - Hay una trasudación masiva de iones sodio ($Na^+$) y cloro ($Cl^-$) desde el líquido extracelular y capilar hacia la leche alveolar, mientras el potasio ($K^+$) disminuye.
    - Este incremento en electrolitos libres dispara la conductividad eléctrica de $\sim 4.5\text{ mS/cm}$ a más de $6.0 - 7.5\text{ mS/cm}$.
 2. **pH de la Leche ($r = +0.851$):**
-   - La leche normal es ligeramente ácida a neutra ($6.5 - 6.7$).
+   - La leche normal es ligeramente ácida a neutra ($6.4 - 6.7$).
    - Con la inflamación e infiltración de bicarbonato y plasma sanguíneo (pH $\approx 7.4$), el pH de la leche se alcaliniza ($> 6.8$ hasta $7.2$).
 3. **El Hallazgo del Volumen de Leche: Desmitificando Supuestos Previos ($r = -0.385$):**
    - En prototipos anteriores y en el notebook con *dummy data*, se asumía erróneamente que las vacas con mastitis tenían más volumen.

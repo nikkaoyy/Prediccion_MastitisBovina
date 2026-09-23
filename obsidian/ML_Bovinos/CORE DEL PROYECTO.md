@@ -2,7 +2,7 @@
 
 > **Estándar:** CRISP-ML(Q) (*Cross-Industry Standard Process for Machine Learning with Quality Assurance*)  
 > **Ámbito Geográfico:** Hatos lecheros especializados de Cundinamarca y la Sabana de Bogotá (Sora, Boyacá / Altiplano Cundiboyacense)  
-> **Investigadores:** Nicolás Martínez Pineda, Laura Sofía Moreno Suárez, Daniel David Leal Lara  
+> **Investigadores:** Nicolás Martínez Pineda, Daniel David Leal Lara  
 > **Dirección Académica:** Carlos Andrés Martínez Alayón — *Universidad Distrital Francisco José de Caldas* (2026)  
 > **Objetivo:** Detección temprana y clasificación de riesgo de mastitis subclínica bovina mediante aprendizaje automático interpretable y libre de fuga de datos (*Data Leakage*).
 
@@ -34,14 +34,14 @@ Esta bóveda de Obsidian está estructurada de manera modular y atómica para op
 
 ## 📊 Estado Actual del Proyecto (Semáforo de Progreso)
 
-| Componente | Estado | Detalle Operativo |
-| :--- | :---: | :--- |
-| **Ingesta de Datos (data/raw)** | ⚠️ **En Revisión** | Dataset v3 con 208 filas. Contiene 7 registros nuevos de Finca 6 con valores nulos en conductividad y disparidad en tipografía (inca_6 vs Finca_6, Hounstein, Normanda). |
-| **Validador de Datos (src/data)** | ✅ **Completado** | DataValidator audita tipos, rangos fisiológicos y columnas obligatorias. Requiere normalización de fincas y manejo de nulos en conductividad. |
-| **Ingeniería de Features (src/data)** | ✅ **Completado** | FeaturePipelineBuilder con imputación mediana, escalado estándar y OneHotEncoder con manejo de categorías desconocidas. |
-| **Módulos de Entrenamiento (src/models)** | ✅ **Completado** | Los scripts no se pueden ejecutar de forma aislada desde src/models/ debido a problemas de sys.path y rutas relativas. |
-| **Notebook de Experimentación (
-otebooks)** | ✅ **Completado** | Model_Analysis_and_Testing.ipynb actualmente opera con dummyDataGenerator.py. Próximo paso: migrar a datos reales. |
+| Componente                                |      Estado      | Detalle Operativo                                                                                                                                                         |
+| :---------------------------------------- | :--------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
+| **Ingesta de Datos (data/raw)**           | ✅ **Completado** | Dataset v3 con 208 filas. Contiene 7 registros nuevos de Finca 6 con valores nulos en conductividad y disparidad en tipografía (inca_6 vs Finca_6, Hounstein, Normanda). |
+| **Validador de Datos (src/data)**         | ✅ **Completado** | DataValidator audita tipos, rangos fisiológicos y columnas obligatorias. Requiere normalización de fincas y manejo de nulos en conductividad.                             |
+| **Ingeniería de Features (src/data)**     | ✅ **Completado** | FeaturePipelineBuilder con imputación mediana, escalado estándar y OneHotEncoder con manejo de categorías desconocidas.                                                   |
+| **Módulos de Entrenamiento (src/models)** | ✅ **Completado** | Los scripts no se pueden ejecutar de forma aislada desde src/models/ debido a problemas de sys.path y rutas relativas.                                                    |
+|                                           |                  |                                                                                                                                                                           |
+**(Notebooks)** | ✅ **Completado** | Model_Analysis_and_Testing.ipynb actualmente opera con dummyDataGenerator.py. Próximo paso: migrar a datos reales. |
 | **Documento Académico (rtículo.md)** | ✅ **Completado** | Protocolo completo estructurado. Pendiente incorporar métricas reales obtenidas del entrenamiento del dataset v3 curado. |
 
 ---
@@ -64,3 +64,7 @@ otebooks)** | ✅ **Completado** | Model_Analysis_and_Testing.ipynb actualmente 
 - [[Contexto Ahorro de Tokens para IAs]]
 - [[Hoja de Ruta y Próximos Pasos]]
 - [[Diagnóstico Dummy Data vs Datos Reales]]
+
+# Mejoras del proyecto
+
+Gracias a una revisión exhaustiva por parte del docente investigador a cargo, salen recomendaciones antes de la publicación como [[Cosas a mejorar del artículo.md]], se recomienda leer esta sección principalmente por la demostración profesional y académica que debe demostrarse en el proyecto
