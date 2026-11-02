@@ -7,8 +7,7 @@ import json
 from pathlib import Path
 from typing import Any
 
-import pandas as pd
-
+from src.data.curation import load_curated_dataset
 from src.data.dataValidation import DataValidator
 from src.data.dummyDataGenerator import generate_dummy_data
 from src.models.DecisionTreeTraining import DecisionTreeModelTrainer
@@ -47,7 +46,7 @@ def run(
         data_path = Path(data_path)
         if not data_path.is_file():
             raise FileNotFoundError(f"No se encontró el dataset: {data_path}")
-        raw_data = pd.read_csv(data_path)
+        raw_data = load_curated_dataset(data_path)
 
     feature_set = feature_set.upper()
     validator = DataValidator(feature_set=feature_set)
