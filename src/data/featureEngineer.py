@@ -9,19 +9,25 @@ from sklearn.impute import SimpleImputer
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import OneHotEncoder, StandardScaler
 
-from src.data.dataValidation import DataValidator
+from src.data.dataValidation import DataValidator, resolve_feature_set
 
 
 class FeaturePipelineBuilder:
     """Crea el transformador y Pipeline de features para el árbol."""
 
-    numeric_features: tuple[str, ...] = tuple(
-        feature
-        for feature in DataValidator.FEATURE_COLUMNS
-        if feature not in DataValidator.CATEGORICAL_COLUMNS
-    )
-
-    categorical_features: tuple[str, ...] = DataValidator.CATEGORICAL_COLUMNS
+    def __init__(self, feature_set: str = "A") -> None:
+        self.feature_set = feature_set.upper()
+        self.feature_columns = resolve_feature_set(self.feature_set)
+        self.numeric_features: tuple[str, ...] = tuple(
+            feature
+            for feature in self.feature_columns
+            if feature not in DataValidator.CATEGORICAL_COLUMNS
+        )
+        self.categorical_features: tuple[str, ...] = tuple(
+            feature
+            for feature in self.feature_columns
+            if feature in DataValidator.CATEGORICAL_COLUMNS
+        )
 
     def build_preprocessor(self) -> ColumnTransformer:
         """Construye un ColumnTransformer con imputación por tipo."""
@@ -76,8 +82,7 @@ class FeaturePipelineBuilder:
         preprocessor = fitted_pipeline.named_steps["preprocessor"]
         return list(preprocessor.get_feature_names_out())
 
-    @staticmethod
-    def assert_feature_contract(columns: Iterable[str]) -> None:
+    def assert_feature_contract(self, columns: Iterable[str]) -> None:
         """Comprueba que X no incluya objetivo ni identificador de finca."""
 
         columns = set(columns)
@@ -92,7 +97,7 @@ class FeaturePipelineBuilder:
                 + ", ".join(sorted(forbidden))
             )
 
-        missing = set(DataValidator.FEATURE_COLUMNS) - columns
+        missing = set(self.feature_columns) - columns
 
         if missing:
             raise ValueError(

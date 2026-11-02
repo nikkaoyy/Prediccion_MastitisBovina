@@ -1,0 +1,126 @@
+{
+  "algorithm": "logistic_regression",
+  "categorical": [
+    {
+      "categories": [
+        "Cruzado",
+        "Holstein",
+        "Jersey",
+        "Normando",
+        "Pardo_Suizo"
+      ],
+      "fill_value": "Holstein",
+      "name": "raza"
+    }
+  ],
+  "coefficients": [
+    0.29972670076119784,
+    0.17397358901483395,
+    -0.45346250866454857,
+    0.03186096685031496,
+    0.29743205593030586,
+    0.5023719518057302,
+    0.05602352772807204,
+    4.357700344675701,
+    -0.08524630774913075,
+    0.14861499083222846,
+    -0.325077317044059,
+    0.361295862459273,
+    -0.09876901332986532
+  ],
+  "disclaimer": "Estimación de riesgo de apoyo a la decisión. No es un diagnóstico y no sustituye la valoración veterinaria ni las pruebas confirmatorias (CMT).",
+  "feature_set": "B",
+  "intercept": 0.6753505047917493,
+  "model_version": "mastitis-B-lr-d4ae0119",
+  "numeric": [
+    {
+      "mean": 5.497607655502392,
+      "median": 5.0,
+      "name": "edad",
+      "scale": 1.6430931325515434
+    },
+    {
+      "mean": 2.851674641148325,
+      "median": 3.0,
+      "name": "numero_de_partos",
+      "scale": 1.5565910395722267
+    },
+    {
+      "mean": 10.956889952153109,
+      "median": 11.0,
+      "name": "volumen_de_leche",
+      "scale": 3.2683300379082434
+    },
+    {
+      "mean": 0.507177033492823,
+      "median": 1.0,
+      "name": "etapa_de_lactancia",
+      "scale": 0.499948487536709
+    },
+    {
+      "mean": 0.44976076555023925,
+      "median": 0.0,
+      "name": "antecedentes_de_mastitis",
+      "scale": 0.4974696164811495
+    },
+    {
+      "mean": 72.37129186602871,
+      "median": 72.7,
+      "name": "humedad",
+      "scale": 8.25288343150156
+    },
+    {
+      "mean": 12.807655502392345,
+      "median": 13.9,
+      "name": "temperatura",
+      "scale": 4.17499262308959
+    },
+    {
+      "mean": 6.768708133971291,
+      "median": 6.75,
+      "name": "ph_leche",
+      "scale": 0.18013221083086328
+    }
+  ],
+  "ranges": {
+    "antecedentes_de_mastitis": [
+      0.0,
+      1.0
+    ],
+    "edad": [
+      1.0,
+      25.0
+    ],
+    "etapa_de_lactancia": [
+      0.0,
+      1.0
+    ],
+    "humedad": [
+      0.0,
+      100.0
+    ],
+    "numero_de_partos": [
+      0.0,
+      20.0
+    ],
+    "ph_leche": [
+      5.5,
+      8.0
+    ],
+    "temperatura": [
+      -20.0,
+      50.0
+    ],
+    "volumen_de_leche": [
+      0.0,
+      100.0
+    ]
+  },
+  "required_inputs": [
+    "ph_leche"
+  ],
+  "thresholds": {
+    "alto": 0.5790255950607471,
+    "medio": 0.41477904389118503
+  }
+}

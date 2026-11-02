@@ -1,0 +1,8 @@
+{
+  "files": {
+    "drift_baseline.json": "7e41b80d5f9108827d9fc22992986167dc62428b31b2afeb560b4e387058c8a7",
+    "model.onnx": "383332a07f1b1afdc6d51c53b02dc9c44ee57ed4cbceb6ec7f4e116185ba973f",
+    "model_lite.json": "e6d428a329a5d0ce5fa94be498923d04f0f3388d3f0504c6f15220608fc6e4df"
+  },
+  "model_version": "mastitis-B-lr-d4ae0119"
+}

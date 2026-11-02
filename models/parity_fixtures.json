@@ -1,0 +1,3112 @@
+{
+  "cases": [
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 74.5,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.98,
+        "raza": "Normando",
+        "temperatura": 15.3,
+        "volumen_de_leche": 5.0
+      },
+      "probability": 0.9991051038727092
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 78.8,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.64,
+        "raza": "Normando",
+        "temperatura": 14.1,
+        "volumen_de_leche": 11.0
+      },
+      "probability": 0.13385033041546743
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 12.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 71.9,
+        "numero_de_partos": 10.0,
+        "ph_leche": 6.89,
+        "raza": "Normando",
+        "temperatura": 12.5,
+        "volumen_de_leche": 4.4
+      },
+      "probability": 0.9992489474209372
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.7,
+        "numero_de_partos": 5.0,
+        "ph_leche": 7.11,
+        "raza": "Normando",
+        "temperatura": 15.0,
+        "volumen_de_leche": 19.2
+      },
+      "probability": 0.999892083230182
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.2,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.57,
+        "raza": "Normando",
+        "temperatura": 14.5,
+        "volumen_de_leche": 11.4
+      },
+      "probability": 0.013431333778609618
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.2,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.57,
+        "raza": "Normando",
+        "temperatura": 15.4,
+        "volumen_de_leche": 10.2
+      },
+      "probability": 0.010517116061668896
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 80.0,
+        "numero_de_partos": 6.0,
+        "ph_leche": 6.95,
+        "raza": "Normando",
+        "temperatura": 12.7,
+        "volumen_de_leche": 7.0
+      },
+      "probability": 0.9995013316406506
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 72.2,
+        "numero_de_partos": 6.0,
+        "ph_leche": 6.75,
+        "raza": "Normando",
+        "temperatura": 12.6,
+        "volumen_de_leche": 9.2
+      },
+      "probability": 0.7894699117175878
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 73.7,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.8,
+        "raza": "Normando",
+        "temperatura": 13.8,
+        "volumen_de_leche": 11.0
+      },
+      "probability": 0.9497334133946465
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 75.2,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.81,
+        "raza": "Normando",
+        "temperatura": 13.0,
+        "volumen_de_leche": 8.4
+      },
+      "probability": 0.951199072707941
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 10.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.3,
+        "numero_de_partos": 7.0,
+        "ph_leche": 7.1,
+        "raza": "Normando",
+        "temperatura": 12.5,
+        "volumen_de_leche": 7.7
+      },
+      "probability": 0.9999885845519545
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.5,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.6,
+        "raza": "Normando",
+        "temperatura": 13.3,
+        "volumen_de_leche": 13.0
+      },
+      "probability": 0.01940844647027117
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 75.5,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.85,
+        "raza": "Normando",
+        "temperatura": 14.7,
+        "volumen_de_leche": 12.6
+      },
+      "probability": 0.9011202866852778
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 72.4,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.78,
+        "raza": "Normando",
+        "temperatura": 13.8,
+        "volumen_de_leche": 5.4
+      },
+      "probability": 0.9356102092702343
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.1,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.56,
+        "raza": "Normando",
+        "temperatura": 12.2,
+        "volumen_de_leche": 8.2
+      },
+      "probability": 0.018779459261504393
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.3,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.85,
+        "raza": "Normando",
+        "temperatura": 12.6,
+        "volumen_de_leche": 11.8
+      },
+      "probability": 0.973100363730992
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.8,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.6,
+        "raza": "Normando",
+        "temperatura": 15.3,
+        "volumen_de_leche": 6.2
+      },
+      "probability": 0.07839107244570918
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 81.6,
+        "numero_de_partos": 6.0,
+        "ph_leche": 7.02,
+        "raza": "Normando",
+        "temperatura": 14.8,
+        "volumen_de_leche": 9.0
+      },
+      "probability": 0.9998932137221234
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 73.7,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.95,
+        "raza": "Normando",
+        "temperatura": 12.3,
+        "volumen_de_leche": 8.0
+      },
+      "probability": 0.9950373756972485
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 78.2,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.76,
+        "raza": "Normando",
+        "temperatura": 13.5,
+        "volumen_de_leche": 10.6
+      },
+      "probability": 0.8466036169141107
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 71.5,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.64,
+        "raza": "Normando",
+        "temperatura": 13.7,
+        "volumen_de_leche": 7.2
+      },
+      "probability": 0.16598585880036523
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.4,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.91,
+        "raza": "Normando",
+        "temperatura": 15.2,
+        "volumen_de_leche": 8.8
+      },
+      "probability": 0.9944187421910693
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 73.1,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.75,
+        "raza": "Normando",
+        "temperatura": 14.3,
+        "volumen_de_leche": 23.4
+      },
+      "probability": 0.49475326502523015
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.7,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.86,
+        "raza": "Normando",
+        "temperatura": 13.8,
+        "volumen_de_leche": 10.8
+      },
+      "probability": 0.9365238086473624
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 76.6,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.96,
+        "raza": "Normando",
+        "temperatura": 12.6,
+        "volumen_de_leche": 13.4
+      },
+      "probability": 0.9974897444982838
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 81.6,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.96,
+        "raza": "Normando",
+        "temperatura": 14.7,
+        "volumen_de_leche": 12.4
+      },
+      "probability": 0.9985972381920801
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 81.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.56,
+        "raza": "Normando",
+        "temperatura": 15.1,
+        "volumen_de_leche": 9.6
+      },
+      "probability": 0.018570001257752905
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.66,
+        "raza": "Normando",
+        "temperatura": 15.2,
+        "volumen_de_leche": 6.8
+      },
+      "probability": 0.20423893316039668
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 71.1,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.82,
+        "raza": "Normando",
+        "temperatura": 12.7,
+        "volumen_de_leche": 9.0
+      },
+      "probability": 0.9497300655360199
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.5,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.96,
+        "raza": "Normando",
+        "temperatura": 13.1,
+        "volumen_de_leche": 22.6
+      },
+      "probability": 0.9793196290024869
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 74.7,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.86,
+        "raza": "Normando",
+        "temperatura": 12.9,
+        "volumen_de_leche": 7.2
+      },
+      "probability": 0.9930797940590078
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 79.9,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.79,
+        "raza": "Normando",
+        "temperatura": 13.2,
+        "volumen_de_leche": 21.5
+      },
+      "probability": 0.47075452318891375
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.4,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.65,
+        "raza": "Normando",
+        "temperatura": 13.9,
+        "volumen_de_leche": 12.6
+      },
+      "probability": 0.05912437291485612
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 71.7,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.6,
+        "raza": "Normando",
+        "temperatura": 14.8,
+        "volumen_de_leche": 7.6
+      },
+      "probability": 0.03687427697440533
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.9,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.62,
+        "raza": "Normando",
+        "temperatura": 15.5,
+        "volumen_de_leche": 8.8
+      },
+      "probability": 0.07529673606358381
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 79.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.62,
+        "raza": "Normando",
+        "temperatura": 12.7,
+        "volumen_de_leche": 9.7
+      },
+      "probability": 0.06022712862218497
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.1,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.6,
+        "raza": "Normando",
+        "temperatura": 14.9,
+        "volumen_de_leche": 18.0
+      },
+      "probability": 0.01458166191710179
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 78.5,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.45,
+        "raza": "Normando",
+        "temperatura": 14.6,
+        "volumen_de_leche": 8.4
+      },
+      "probability": 0.0014606083773447698
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 79.3,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.61,
+        "raza": "Normando",
+        "temperatura": 12.3,
+        "volumen_de_leche": 13.8
+      },
+      "probability": 0.04855485265249554
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 74.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.61,
+        "raza": "Normando",
+        "temperatura": 12.4,
+        "volumen_de_leche": 11.0
+      },
+      "probability": 0.033361527779214716
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 80.4,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.89,
+        "raza": "Normando",
+        "temperatura": 14.2,
+        "volumen_de_leche": 15.0
+      },
+      "probability": 0.9889883415355387
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 84.3,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.69,
+        "raza": "Holstein",
+        "temperatura": 2.8,
+        "volumen_de_leche": 15.21
+      },
+      "probability": 0.3355880904129429
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 64.6,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.55,
+        "raza": "Holstein",
+        "temperatura": 16.2,
+        "volumen_de_leche": 14.43
+      },
+      "probability": 0.0030189548105670075
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 66.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.65,
+        "raza": "Holstein",
+        "temperatura": 14.7,
+        "volumen_de_leche": 13.33
+      },
+      "probability": 0.029238620586135775
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 68.2,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.86,
+        "raza": "Holstein",
+        "temperatura": 12.4,
+        "volumen_de_leche": 10.3
+      },
+      "probability": 0.9767694288299732
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 68.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.61,
+        "raza": "Holstein",
+        "temperatura": 13.2,
+        "volumen_de_leche": 12.21
+      },
+      "probability": 0.019472922415351774
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 71.1,
+        "numero_de_partos": 6.0,
+        "ph_leche": 6.84,
+        "raza": "Holstein",
+        "temperatura": 13.3,
+        "volumen_de_leche": 13.51
+      },
+      "probability": 0.9618978814019482
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 65.8,
+        "numero_de_partos": 6.0,
+        "ph_leche": 6.87,
+        "raza": "Jersey",
+        "temperatura": 12.4,
+        "volumen_de_leche": 7.08
+      },
+      "probability": 0.9708002744195674
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 64.7,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.62,
+        "raza": "Holstein",
+        "temperatura": 11.8,
+        "volumen_de_leche": 14.77
+      },
+      "probability": 0.02054631756880351
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 78.1,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.6,
+        "raza": "Holstein",
+        "temperatura": 2.9,
+        "volumen_de_leche": 12.38
+      },
+      "probability": 0.023516991017633736
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 85.1,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.75,
+        "raza": "Holstein",
+        "temperatura": 4.1,
+        "volumen_de_leche": 6.69
+      },
+      "probability": 0.7340939845585842
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 72.2,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.88,
+        "raza": "Normando",
+        "temperatura": 14.4,
+        "volumen_de_leche": 9.18
+      },
+      "probability": 0.9897160594874338
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 72.9,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.59,
+        "raza": "Holstein",
+        "temperatura": 16.4,
+        "volumen_de_leche": 12.58
+      },
+      "probability": 0.01406405479682993
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 75.9,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.71,
+        "raza": "Normando",
+        "temperatura": 3.4,
+        "volumen_de_leche": 10.6
+      },
+      "probability": 0.24129680817204682
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 69.2,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.95,
+        "raza": "Holstein",
+        "temperatura": 12.1,
+        "volumen_de_leche": 10.81
+      },
+      "probability": 0.9947800153305292
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 71.6,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.48,
+        "raza": "Holstein",
+        "temperatura": 15.1,
+        "volumen_de_leche": 16.52
+      },
+      "probability": 0.002585720904775136
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 71.1,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.93,
+        "raza": "Holstein",
+        "temperatura": 13.6,
+        "volumen_de_leche": 10.51
+      },
+      "probability": 0.9872036028703984
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 62.9,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.9,
+        "raza": "Holstein",
+        "temperatura": 14.2,
+        "volumen_de_leche": 8.02
+      },
+      "probability": 0.9842641501691038
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 64.5,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.92,
+        "raza": "Holstein",
+        "temperatura": 11.9,
+        "volumen_de_leche": 9.14
+      },
+      "probability": 0.9714487384289486
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 79.4,
+        "numero_de_partos": 3.0,
+        "ph_leche": 7.06,
+        "raza": "Holstein",
+        "temperatura": 15.7,
+        "volumen_de_leche": 7.31
+      },
+      "probability": 0.9999096805078036
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 9.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 75.0,
+        "numero_de_partos": 6.0,
+        "ph_leche": 7.01,
+        "raza": "Holstein",
+        "temperatura": 16.1,
+        "volumen_de_leche": 9.02
+      },
+      "probability": 0.9996247022123921
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 71.4,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.68,
+        "raza": "Holstein",
+        "temperatura": 14.8,
+        "volumen_de_leche": 14.12
+      },
+      "probability": 0.05968840411728098
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 78.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.64,
+        "raza": "Holstein",
+        "temperatura": 15.1,
+        "volumen_de_leche": 13.45
+      },
+      "probability": 0.051191050865512476
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 66.1,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.8,
+        "raza": "Jersey",
+        "temperatura": 11.8,
+        "volumen_de_leche": 6.62
+      },
+      "probability": 0.8821334779749436
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 76.3,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.93,
+        "raza": "Holstein",
+        "temperatura": 12.2,
+        "volumen_de_leche": 7.34
+      },
+      "probability": 0.9956843931408716
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 87.1,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.51,
+        "raza": "Holstein",
+        "temperatura": -1.4,
+        "volumen_de_leche": 14.92
+      },
+      "probability": 0.0041870443813198125
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.2,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.79,
+        "raza": "Normando",
+        "temperatura": 3.8,
+        "volumen_de_leche": 7.85
+      },
+      "probability": 0.9324199043153196
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 71.8,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.81,
+        "raza": "Holstein",
+        "temperatura": 15.0,
+        "volumen_de_leche": 11.62
+      },
+      "probability": 0.862501770391388
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.55,
+        "raza": "Holstein",
+        "temperatura": 13.5,
+        "volumen_de_leche": 16.0
+      },
+      "probability": 0.004701489619127683
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 78.5,
+        "numero_de_partos": 4.0,
+        "ph_leche": 7.02,
+        "raza": "Holstein",
+        "temperatura": 12.0,
+        "volumen_de_leche": 13.5
+      },
+      "probability": 0.9995055602157936
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 69.6,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.95,
+        "raza": "Holstein",
+        "temperatura": 14.5,
+        "volumen_de_leche": 8.67
+      },
+      "probability": 0.9961118688297523
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.1,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.5,
+        "raza": "Pardo_Suizo",
+        "temperatura": 12.4,
+        "volumen_de_leche": 8.23
+      },
+      "probability": 0.0050630321058910245
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 68.0,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.95,
+        "raza": "Normando",
+        "temperatura": 11.8,
+        "volumen_de_leche": 9.86
+      },
+      "probability": 0.9981453867330502
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.1,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.53,
+        "raza": "Holstein",
+        "temperatura": 15.2,
+        "volumen_de_leche": 14.57
+      },
+      "probability": 0.001969813431386133
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 67.0,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.98,
+        "raza": "Jersey",
+        "temperatura": 15.4,
+        "volumen_de_leche": 5.66
+      },
+      "probability": 0.9977146421755453
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 72.7,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.95,
+        "raza": "Normando",
+        "temperatura": 14.0,
+        "volumen_de_leche": 8.79
+      },
+      "probability": 0.9965906299665244
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 73.2,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.84,
+        "raza": "Holstein",
+        "temperatura": 13.8,
+        "volumen_de_leche": 9.17
+      },
+      "probability": 0.9654080308428449
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 69.2,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.96,
+        "raza": "Jersey",
+        "temperatura": 13.7,
+        "volumen_de_leche": 4.82
+      },
+      "probability": 0.9977996704538474
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 79.6,
+        "numero_de_partos": 4.0,
+        "ph_leche": 7.14,
+        "raza": "Holstein",
+        "temperatura": 3.0,
+        "volumen_de_leche": 13.87
+      },
+      "probability": 0.9999698545531798
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 66.0,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.78,
+        "raza": "Normando",
+        "temperatura": 11.6,
+        "volumen_de_leche": 10.74
+      },
+      "probability": 0.8731513372384698
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 78.0,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.54,
+        "raza": "Jersey",
+        "temperatura": 14.3,
+        "volumen_de_leche": 7.18
+      },
+      "probability": 0.007378666037335785
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 74.0,
+        "numero_de_partos": 2.0,
+        "ph_leche": 7.06,
+        "raza": "Holstein",
+        "temperatura": 13.5,
+        "volumen_de_leche": 11.12
+      },
+      "probability": 0.9996237545019014
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 7.04,
+        "raza": "Holstein",
+        "temperatura": 15.2,
+        "volumen_de_leche": 10.61
+      },
+      "probability": 0.9990759809447417
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 72.6,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.65,
+        "raza": "Holstein",
+        "temperatura": 13.4,
+        "volumen_de_leche": 11.85
+      },
+      "probability": 0.15693460455626146
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 66.0,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.59,
+        "raza": "Holstein",
+        "temperatura": 15.8,
+        "volumen_de_leche": 13.24
+      },
+      "probability": 0.007529442413615632
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 71.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.81,
+        "raza": "Normando",
+        "temperatura": 13.9,
+        "volumen_de_leche": 6.41
+      },
+      "probability": 0.9418165626833637
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 91.7,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.91,
+        "raza": "Normando",
+        "temperatura": 3.7,
+        "volumen_de_leche": 7.33
+      },
+      "probability": 0.9984699513590961
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 76.9,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.95,
+        "raza": "Holstein",
+        "temperatura": 14.8,
+        "volumen_de_leche": 8.3
+      },
+      "probability": 0.9945742107172374
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 66.5,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.92,
+        "raza": "Holstein",
+        "temperatura": 15.2,
+        "volumen_de_leche": 12.66
+      },
+      "probability": 0.98440125097956
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 65.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.58,
+        "raza": "Holstein",
+        "temperatura": 16.3,
+        "volumen_de_leche": 11.56
+      },
+      "probability": 0.007202462874304097
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 75.0,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.64,
+        "raza": "Holstein",
+        "temperatura": 16.1,
+        "volumen_de_leche": 13.37
+      },
+      "probability": 0.07309690064235305
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 66.7,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.79,
+        "raza": "Holstein",
+        "temperatura": 11.7,
+        "volumen_de_leche": 10.8
+      },
+      "probability": 0.8455080863629502
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.5,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.59,
+        "raza": "Holstein",
+        "temperatura": 14.6,
+        "volumen_de_leche": 12.15
+      },
+      "probability": 0.01509561402957259
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 76.4,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.63,
+        "raza": "Pardo_Suizo",
+        "temperatura": 15.6,
+        "volumen_de_leche": 10.05
+      },
+      "probability": 0.03441455049324092
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 76.2,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.82,
+        "raza": "Holstein",
+        "temperatura": 16.3,
+        "volumen_de_leche": 12.71
+      },
+      "probability": 0.9108420411842142
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 66.5,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.57,
+        "raza": "Holstein",
+        "temperatura": 15.7,
+        "volumen_de_leche": 16.33
+      },
+      "probability": 0.007061448011254295
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 72.6,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.95,
+        "raza": "Holstein",
+        "temperatura": 11.7,
+        "volumen_de_leche": 11.31
+      },
+      "probability": 0.9876102138380832
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.5,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.61,
+        "raza": "Holstein",
+        "temperatura": 16.2,
+        "volumen_de_leche": 15.82
+      },
+      "probability": 0.028302306057696045
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 68.6,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.55,
+        "raza": "Cruzado",
+        "temperatura": 14.8,
+        "volumen_de_leche": 10.23
+      },
+      "probability": 0.0031206775040871567
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.9,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.6,
+        "raza": "Cruzado",
+        "temperatura": 14.2,
+        "volumen_de_leche": 12.16
+      },
+      "probability": 0.013024867531601153
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.7,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.96,
+        "raza": "Holstein",
+        "temperatura": 11.6,
+        "volumen_de_leche": 7.08
+      },
+      "probability": 0.9979098359997602
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 63.7,
+        "numero_de_partos": 3.0,
+        "ph_leche": 7.05,
+        "raza": "Holstein",
+        "temperatura": 13.5,
+        "volumen_de_leche": 12.23
+      },
+      "probability": 0.999268656060779
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.4,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.75,
+        "raza": "Holstein",
+        "temperatura": 13.0,
+        "volumen_de_leche": 8.2
+      },
+      "probability": 0.7177441160938856
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 65.9,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.98,
+        "raza": "Holstein",
+        "temperatura": 14.9,
+        "volumen_de_leche": 9.25
+      },
+      "probability": 0.9977456605984028
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 9.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.4,
+        "numero_de_partos": 6.0,
+        "ph_leche": 6.98,
+        "raza": "Holstein",
+        "temperatura": 16.2,
+        "volumen_de_leche": 11.62
+      },
+      "probability": 0.9991388844073212
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 64.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.99,
+        "raza": "Holstein",
+        "temperatura": 15.7,
+        "volumen_de_leche": 11.86
+      },
+      "probability": 0.9939780458054095
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 73.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.66,
+        "raza": "Holstein",
+        "temperatura": 15.5,
+        "volumen_de_leche": 11.56
+      },
+      "probability": 0.16486665142599324
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 64.8,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.58,
+        "raza": "Holstein",
+        "temperatura": 15.0,
+        "volumen_de_leche": 15.05
+      },
+      "probability": 0.009571145696845503
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 89.6,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.55,
+        "raza": "Holstein",
+        "temperatura": 4.2,
+        "volumen_de_leche": 10.28
+      },
+      "probability": 0.01540660688774701
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 63.6,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.86,
+        "raza": "Jersey",
+        "temperatura": 14.3,
+        "volumen_de_leche": 8.22
+      },
+      "probability": 0.874067638431431
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 91.4,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.72,
+        "raza": "Holstein",
+        "temperatura": 1.3,
+        "volumen_de_leche": 12.21
+      },
+      "probability": 0.5432678635066782
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.9,
+        "numero_de_partos": 1.0,
+        "ph_leche": 7.0,
+        "raza": "Holstein",
+        "temperatura": 14.4,
+        "volumen_de_leche": 11.6
+      },
+      "probability": 0.996540371675774
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 9.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.3,
+        "numero_de_partos": 6.0,
+        "ph_leche": 6.86,
+        "raza": "Holstein",
+        "temperatura": 14.8,
+        "volumen_de_leche": 11.1
+      },
+      "probability": 0.9909016939626137
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.7,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.6,
+        "raza": "Cruzado",
+        "temperatura": 15.9,
+        "volumen_de_leche": 11.95
+      },
+      "probability": 0.04062198849673537
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 76.7,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.83,
+        "raza": "Holstein",
+        "temperatura": 12.3,
+        "volumen_de_leche": 9.88
+      },
+      "probability": 0.9601293967316508
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 68.8,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.83,
+        "raza": "Holstein",
+        "temperatura": 12.1,
+        "volumen_de_leche": 11.53
+      },
+      "probability": 0.8195239163829594
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 89.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.93,
+        "raza": "Normando",
+        "temperatura": 0.5,
+        "volumen_de_leche": 5.39
+      },
+      "probability": 0.9984322184196893
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 87.0,
+        "numero_de_partos": 1.0,
+        "ph_leche": 7.18,
+        "raza": "Holstein",
+        "temperatura": -0.6,
+        "volumen_de_leche": 8.76
+      },
+      "probability": 0.9999844516053263
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 91.8,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.75,
+        "raza": "Holstein",
+        "temperatura": 3.8,
+        "volumen_de_leche": 10.55
+      },
+      "probability": 0.6700177185899779
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 76.7,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.84,
+        "raza": "Holstein",
+        "temperatura": 13.4,
+        "volumen_de_leche": 8.38
+      },
+      "probability": 0.9745738684379065
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.1,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.82,
+        "raza": "Holstein",
+        "temperatura": 13.6,
+        "volumen_de_leche": 9.2
+      },
+      "probability": 0.9339829740152052
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.6,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.98,
+        "raza": "Holstein",
+        "temperatura": 12.2,
+        "volumen_de_leche": 10.96
+      },
+      "probability": 0.9976527508944466
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.0,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.53,
+        "raza": "Holstein",
+        "temperatura": 15.3,
+        "volumen_de_leche": 12.44
+      },
+      "probability": 0.0025096436304739385
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.5,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.57,
+        "raza": "Holstein",
+        "temperatura": 14.3,
+        "volumen_de_leche": 13.77
+      },
+      "probability": 0.014910954510145579
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.2,
+        "numero_de_partos": 4.0,
+        "ph_leche": 7.13,
+        "raza": "Normando",
+        "temperatura": 15.4,
+        "volumen_de_leche": 6.61
+      },
+      "probability": 0.9999895773990455
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 64.1,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.77,
+        "raza": "Holstein",
+        "temperatura": 13.9,
+        "volumen_de_leche": 12.47
+      },
+      "probability": 0.6367604136011136
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.7,
+        "numero_de_partos": 3.0,
+        "ph_leche": 7.17,
+        "raza": "Holstein",
+        "temperatura": 12.3,
+        "volumen_de_leche": 11.59
+      },
+      "probability": 0.9999819618000526
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 74.5,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.75,
+        "raza": "Holstein",
+        "temperatura": 13.0,
+        "volumen_de_leche": 8.69
+      },
+      "probability": 0.5973902265896148
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 63.9,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.68,
+        "raza": "Holstein",
+        "temperatura": 12.2,
+        "volumen_de_leche": 8.76
+      },
+      "probability": 0.09460250911990271
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 71.6,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.63,
+        "raza": "Holstein",
+        "temperatura": 11.9,
+        "volumen_de_leche": 14.83
+      },
+      "probability": 0.021930031843676662
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 65.6,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.81,
+        "raza": "Holstein",
+        "temperatura": 16.4,
+        "volumen_de_leche": 8.88
+      },
+      "probability": 0.8493548824789517
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 75.9,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.75,
+        "raza": "Holstein",
+        "temperatura": 4.5,
+        "volumen_de_leche": 11.84
+      },
+      "probability": 0.4965706461216128
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.0,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.58,
+        "raza": "Holstein",
+        "temperatura": 15.4,
+        "volumen_de_leche": 15.57
+      },
+      "probability": 0.005107250714494069
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 82.5,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.7,
+        "raza": "Holstein",
+        "temperatura": -1.7,
+        "volumen_de_leche": 13.36
+      },
+      "probability": 0.17783186747055302
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 79.6,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.57,
+        "raza": "Holstein",
+        "temperatura": 12.6,
+        "volumen_de_leche": 15.12
+      },
+      "probability": 0.0061369528200720495
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 69.3,
+        "numero_de_partos": 4.0,
+        "ph_leche": 7.09,
+        "raza": "Holstein",
+        "temperatura": 11.9,
+        "volumen_de_leche": 9.93
+      },
+      "probability": 0.9998342388996626
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 69.5,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.67,
+        "raza": "Holstein",
+        "temperatura": 16.3,
+        "volumen_de_leche": 12.71
+      },
+      "probability": 0.17796150237243433
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.8,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.8,
+        "raza": "Pardo_Suizo",
+        "temperatura": 15.1,
+        "volumen_de_leche": 5.17
+      },
+      "probability": 0.838638830004032
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 68.5,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.61,
+        "raza": "Holstein",
+        "temperatura": 12.9,
+        "volumen_de_leche": 13.39
+      },
+      "probability": 0.013319878564789615
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 66.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.6,
+        "raza": "Holstein",
+        "temperatura": 12.4,
+        "volumen_de_leche": 12.9
+      },
+      "probability": 0.013054693167832887
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 69.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.93,
+        "raza": "Holstein",
+        "temperatura": 12.0,
+        "volumen_de_leche": 8.23
+      },
+      "probability": 0.9888264820853272
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.8,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.7,
+        "raza": "Pardo_Suizo",
+        "temperatura": 12.8,
+        "volumen_de_leche": 8.95
+      },
+      "probability": 0.18218053856830074
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 63.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.72,
+        "raza": "Jersey",
+        "temperatura": 12.7,
+        "volumen_de_leche": 7.11
+      },
+      "probability": 0.33770705156838954
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 66.5,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.59,
+        "raza": "Holstein",
+        "temperatura": 16.2,
+        "volumen_de_leche": 12.06
+      },
+      "probability": 0.010250874207361262
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 74.7,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.95,
+        "raza": "Holstein",
+        "temperatura": 15.4,
+        "volumen_de_leche": 10.67
+      },
+      "probability": 0.9970732956222121
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 78.8,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.9,
+        "raza": "Normando",
+        "temperatura": 2.1,
+        "volumen_de_leche": 6.26
+      },
+      "probability": 0.996244388734325
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 91.8,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.56,
+        "raza": "Holstein",
+        "temperatura": -1.8,
+        "volumen_de_leche": 11.07
+      },
+      "probability": 0.018492624067059173
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 68.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.96,
+        "raza": "Holstein",
+        "temperatura": 14.1,
+        "volumen_de_leche": 8.99
+      },
+      "probability": 0.9965378138309544
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 74.1,
+        "numero_de_partos": 3.0,
+        "ph_leche": 7.03,
+        "raza": "Holstein",
+        "temperatura": 12.5,
+        "volumen_de_leche": 9.48
+      },
+      "probability": 0.9995639256752502
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 79.0,
+        "numero_de_partos": 2.0,
+        "ph_leche": 7.02,
+        "raza": "Holstein",
+        "temperatura": 15.7,
+        "volumen_de_leche": 8.72
+      },
+      "probability": 0.9991332850979708
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 64.0,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.55,
+        "raza": "Jersey",
+        "temperatura": 15.3,
+        "volumen_de_leche": 10.6
+      },
+      "probability": 0.007762842540005133
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 73.8,
+        "numero_de_partos": 3.0,
+        "ph_leche": 7.01,
+        "raza": "Jersey",
+        "temperatura": 12.0,
+        "volumen_de_leche": 3.88
+      },
+      "probability": 0.9991888609886015
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 67.2,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.6,
+        "raza": "Holstein",
+        "temperatura": 12.0,
+        "volumen_de_leche": 14.03
+      },
+      "probability": 0.007322684837834264
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 69.8,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.68,
+        "raza": "Holstein",
+        "temperatura": 15.5,
+        "volumen_de_leche": 16.03
+      },
+      "probability": 0.050802963799642935
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.0,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.63,
+        "raza": "Holstein",
+        "temperatura": 14.7,
+        "volumen_de_leche": 16.06
+      },
+      "probability": 0.058906118450451336
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 72.9,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.59,
+        "raza": "Holstein",
+        "temperatura": 11.9,
+        "volumen_de_leche": 12.6
+      },
+      "probability": 0.011111257450934154
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.6,
+        "numero_de_partos": 3.0,
+        "ph_leche": 7.02,
+        "raza": "Jersey",
+        "temperatura": 14.1,
+        "volumen_de_leche": 3.77
+      },
+      "probability": 0.9995923591844741
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 76.6,
+        "numero_de_partos": 5.0,
+        "ph_leche": 7.08,
+        "raza": "Jersey",
+        "temperatura": 15.3,
+        "volumen_de_leche": 6.96
+      },
+      "probability": 0.9999323372055644
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 78.7,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.64,
+        "raza": "Normando",
+        "temperatura": 12.7,
+        "volumen_de_leche": 15.65
+      },
+      "probability": 0.10698671321644328
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 78.7,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.96,
+        "raza": "Holstein",
+        "temperatura": 14.9,
+        "volumen_de_leche": 9.51
+      },
+      "probability": 0.9957637344253547
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 69.4,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.61,
+        "raza": "Holstein",
+        "temperatura": 12.9,
+        "volumen_de_leche": 12.44
+      },
+      "probability": 0.04760822677764933
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 65.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.55,
+        "raza": "Holstein",
+        "temperatura": 15.5,
+        "volumen_de_leche": 11.44
+      },
+      "probability": 0.008544654845901953
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 64.0,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.8,
+        "raza": "Jersey",
+        "temperatura": 14.1,
+        "volumen_de_leche": 5.64
+      },
+      "probability": 0.8607266201985107
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.1,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.67,
+        "raza": "Holstein",
+        "temperatura": 13.6,
+        "volumen_de_leche": 12.33
+      },
+      "probability": 0.269552121538777
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.64,
+        "raza": "Holstein",
+        "temperatura": 15.2,
+        "volumen_de_leche": 12.97
+      },
+      "probability": 0.061567750410053426
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 9.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.5,
+        "numero_de_partos": 6.0,
+        "ph_leche": 6.92,
+        "raza": "Holstein",
+        "temperatura": 15.2,
+        "volumen_de_leche": 13.97
+      },
+      "probability": 0.9966573555165767
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 66.2,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.93,
+        "raza": "Holstein",
+        "temperatura": 14.2,
+        "volumen_de_leche": 9.79
+      },
+      "probability": 0.9952348009018773
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.0,
+        "numero_de_partos": 1.0,
+        "ph_leche": 7.04,
+        "raza": "Holstein",
+        "temperatura": 13.7,
+        "volumen_de_leche": 12.33
+      },
+      "probability": 0.9989735344944826
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 66.9,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.82,
+        "raza": "Holstein",
+        "temperatura": 14.4,
+        "volumen_de_leche": 6.94
+      },
+      "probability": 0.8994101505336364
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 71.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.97,
+        "raza": "Holstein",
+        "temperatura": 11.8,
+        "volumen_de_leche": 7.1
+      },
+      "probability": 0.9947792689034584
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 74.2,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.55,
+        "raza": "Holstein",
+        "temperatura": 14.5,
+        "volumen_de_leche": 11.28
+      },
+      "probability": 0.011014073979078163
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 79.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.95,
+        "raza": "Holstein",
+        "temperatura": 11.9,
+        "volumen_de_leche": 6.58
+      },
+      "probability": 0.997333735697364
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 87.9,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.86,
+        "raza": "Holstein",
+        "temperatura": 0.6,
+        "volumen_de_leche": 8.38
+      },
+      "probability": 0.9904352976804065
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 75.3,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.51,
+        "raza": "Holstein",
+        "temperatura": 11.6,
+        "volumen_de_leche": 10.81
+      },
+      "probability": 0.0021242191137011445
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.56,
+        "raza": "Holstein",
+        "temperatura": 3.0,
+        "volumen_de_leche": 12.11
+      },
+      "probability": 0.009507183341522441
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 68.2,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.96,
+        "raza": "Holstein",
+        "temperatura": 13.4,
+        "volumen_de_leche": 9.28
+      },
+      "probability": 0.997976945340049
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 64.9,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.65,
+        "raza": "Holstein",
+        "temperatura": 15.9,
+        "volumen_de_leche": 14.32
+      },
+      "probability": 0.02391448618238651
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 77.6,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.6,
+        "raza": "Holstein",
+        "temperatura": 15.9,
+        "volumen_de_leche": 14.26
+      },
+      "probability": 0.03715832440614617
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 64.8,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.6,
+        "raza": "Normando",
+        "temperatura": 11.6,
+        "volumen_de_leche": 12.53
+      },
+      "probability": 0.012013491082849827
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 70.8,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.62,
+        "raza": "Holstein",
+        "temperatura": 16.1,
+        "volumen_de_leche": 11.37
+      },
+      "probability": 0.022261631820594378
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 68.6,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.98,
+        "raza": "Holstein",
+        "temperatura": 12.2,
+        "volumen_de_leche": 9.56
+      },
+      "probability": 0.9982739137356951
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 67.0,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.91,
+        "raza": "Holstein",
+        "temperatura": 15.9,
+        "volumen_de_leche": 12.51
+      },
+      "probability": 0.9844187519149281
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 72.2,
+        "numero_de_partos": 4.0,
+        "ph_leche": 7.0,
+        "raza": "Holstein",
+        "temperatura": 13.4,
+        "volumen_de_leche": 8.61
+      },
+      "probability": 0.9993401384844721
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 64.6,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.61,
+        "raza": "Holstein",
+        "temperatura": 12.7,
+        "volumen_de_leche": 12.73
+      },
+      "probability": 0.04865291886635513
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.4,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.93,
+        "raza": "Holstein",
+        "temperatura": 14.6,
+        "volumen_de_leche": 10.75
+      },
+      "probability": 0.9960901043342619
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 78.0,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.6,
+        "raza": "Cruzado",
+        "temperatura": 12.2,
+        "volumen_de_leche": 11.24
+      },
+      "probability": 0.0245253013675046
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 62.2,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.69,
+        "raza": "Holstein",
+        "temperatura": 15.3,
+        "volumen_de_leche": 14.39
+      },
+      "probability": 0.04555520361732906
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 67.8,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.72,
+        "raza": "Jersey",
+        "temperatura": 14.6,
+        "volumen_de_leche": 12.56
+      },
+      "probability": 0.31258840541879795
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 64.0,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.65,
+        "raza": "Holstein",
+        "temperatura": 13.9,
+        "volumen_de_leche": 13.63
+      },
+      "probability": 0.05063757057909079
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 9.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 70.6,
+        "numero_de_partos": 6.0,
+        "ph_leche": 7.18,
+        "raza": "Normando",
+        "temperatura": 15.2,
+        "volumen_de_leche": 7.79
+      },
+      "probability": 0.9999940949308467
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 76.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.55,
+        "raza": "Holstein",
+        "temperatura": 16.3,
+        "volumen_de_leche": 11.98
+      },
+      "probability": 0.008556788039351712
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 76.9,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.75,
+        "raza": "Holstein",
+        "temperatura": 15.4,
+        "volumen_de_leche": 9.52
+      },
+      "probability": 0.6124787604790631
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.9,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.83,
+        "raza": "Holstein",
+        "temperatura": 13.8,
+        "volumen_de_leche": 9.15
+      },
+      "probability": 0.9751581296505937
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 91.3,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.62,
+        "raza": "Holstein",
+        "temperatura": -2.9,
+        "volumen_de_leche": 11.95
+      },
+      "probability": 0.08368296610743908
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 76.1,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.66,
+        "raza": "Holstein",
+        "temperatura": 16.2,
+        "volumen_de_leche": 14.7
+      },
+      "probability": 0.25741284314717156
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 76.1,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.81,
+        "raza": "Holstein",
+        "temperatura": 16.0,
+        "volumen_de_leche": 11.61
+      },
+      "probability": 0.8912193598875685
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 88.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.76,
+        "raza": "Holstein",
+        "temperatura": 1.9,
+        "volumen_de_leche": 11.27
+      },
+      "probability": 0.7109149483101981
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 72.5,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.67,
+        "raza": "Holstein",
+        "temperatura": 14.5,
+        "volumen_de_leche": 11.92
+      },
+      "probability": 0.2881802609404247
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 85.2,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.75,
+        "raza": "Holstein",
+        "temperatura": -2.1,
+        "volumen_de_leche": 10.51
+      },
+      "probability": 0.8553323189869377
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 3.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 65.6,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.59,
+        "raza": "Pardo_Suizo",
+        "temperatura": 12.1,
+        "volumen_de_leche": 8.73
+      },
+      "probability": 0.008497598072257492
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 66.5,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.5,
+        "raza": "Pardo_Suizo",
+        "temperatura": 16.1,
+        "volumen_de_leche": 12.0
+      },
+      "probability": 0.0020891148882592977
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 5.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 45.0,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.71,
+        "raza": "Normando",
+        "temperatura": 17.0,
+        "volumen_de_leche": 18.0
+      },
+      "probability": 0.03618043914884706
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 45.0,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.52,
+        "raza": "Holstein",
+        "temperatura": 17.0,
+        "volumen_de_leche": 10.0
+      },
+      "probability": 0.0006489924791593026
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 12.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 45.0,
+        "numero_de_partos": 7.0,
+        "ph_leche": 6.68,
+        "raza": "Normando",
+        "temperatura": 17.0,
+        "volumen_de_leche": 20.0
+      },
+      "probability": 0.11634701430743036
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 45.0,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.54,
+        "raza": "Normando",
+        "temperatura": 16.0,
+        "volumen_de_leche": 12.0
+      },
+      "probability": 0.0034123721315799382
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 45.0,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.7,
+        "raza": "Holstein",
+        "temperatura": 16.0,
+        "volumen_de_leche": 8.0
+      },
+      "probability": 0.09584484709422376
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 45.0,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.28,
+        "raza": "Holstein",
+        "temperatura": 16.0,
+        "volumen_de_leche": 10.5
+      },
+      "probability": 3.4774087423274016e-06
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 45.0,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.41,
+        "raza": "Holstein",
+        "temperatura": 16.0,
+        "volumen_de_leche": 12.0
+      },
+      "probability": 3.0334390424466917e-05
+    },
+    {
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 46.0,
+        "numero_de_partos": 5.0,
+        "ph_leche": 6.92,
+        "raza": "Holstein",
+        "temperatura": 20.0,
+        "volumen_de_leche": 15.5
+      },
+      "probability": 0.9677621636392486
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 73.5,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.6,
+        "raza": null,
+        "temperatura": 13.3,
+        "volumen_de_leche": 13.0
+      },
+      "probability": 0.015748620909407377
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 0.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 78.2,
+        "numero_de_partos": 2.0,
+        "ph_leche": 6.64,
+        "raza": null,
+        "temperatura": 15.1,
+        "volumen_de_leche": 13.45
+      },
+      "probability": 0.051191050865512476
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 74.2,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.55,
+        "raza": null,
+        "temperatura": 14.5,
+        "volumen_de_leche": 11.28
+      },
+      "probability": 0.011014073979078163
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 68.6,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.98,
+        "raza": "Raza_Nueva",
+        "temperatura": 12.2,
+        "volumen_de_leche": 9.56
+      },
+      "probability": 0.9979979031916402
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 69.5,
+        "numero_de_partos": 3.0,
+        "ph_leche": 6.67,
+        "raza": "Raza_Nueva",
+        "temperatura": 16.3,
+        "volumen_de_leche": 12.71
+      },
+      "probability": 0.15724979959159016
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 6.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 72.2,
+        "numero_de_partos": 4.0,
+        "ph_leche": 7.0,
+        "raza": "Raza_Nueva",
+        "temperatura": 13.4,
+        "volumen_de_leche": 8.61
+      },
+      "probability": 0.9992344923126092
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 76.6,
+        "numero_de_partos": 5.0,
+        "ph_leche": 7.08,
+        "raza": "Jersey",
+        "temperatura": 15.3,
+        "volumen_de_leche": null
+      },
+      "probability": 0.9998814881436943
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 7.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 77.2,
+        "numero_de_partos": 4.0,
+        "ph_leche": 7.13,
+        "raza": "Normando",
+        "temperatura": 15.4,
+        "volumen_de_leche": null
+      },
+      "probability": 0.9999808355726977
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 8.0,
+        "etapa_de_lactancia": 0.0,
+        "humedad": null,
+        "numero_de_partos": 6.0,
+        "ph_leche": 6.84,
+        "raza": "Holstein",
+        "temperatura": null,
+        "volumen_de_leche": 13.51
+      },
+      "probability": 0.9655798075869699
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": 4.0,
+        "etapa_de_lactancia": 1.0,
+        "humedad": null,
+        "numero_de_partos": 1.0,
+        "ph_leche": 6.93,
+        "raza": "Normando",
+        "temperatura": null,
+        "volumen_de_leche": 5.39
+      },
+      "probability": 0.9964094644813642
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": null,
+        "etapa_de_lactancia": 0.0,
+        "humedad": 67.8,
+        "numero_de_partos": 4.0,
+        "ph_leche": 6.72,
+        "raza": "Jersey",
+        "temperatura": 14.6,
+        "volumen_de_leche": 12.56
+      },
+      "probability": 0.2747884171528128
+    },
+    {
+      "edge": true,
+      "input": {
+        "antecedentes_de_mastitis": 1.0,
+        "edad": null,
+        "etapa_de_lactancia": 1.0,
+        "humedad": 79.4,
+        "numero_de_partos": 3.0,
+        "ph_leche": 7.06,
+        "raza": "Holstein",
+        "temperatura": 15.7,
+        "volumen_de_leche": 7.31
+      },
+      "probability": 0.9998916083171232
+    }
+  ],
+  "model_version": "mastitis-B-lr-d4ae0119",
+  "tolerance": 1e-05
+}

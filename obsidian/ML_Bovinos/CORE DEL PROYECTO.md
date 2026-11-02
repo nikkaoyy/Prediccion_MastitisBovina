@@ -36,12 +36,12 @@ Esta bóveda de Obsidian está estructurada de manera modular y atómica para op
 
 | Componente                                |      Estado      | Detalle Operativo                                                                                                                                                         |
 | :---------------------------------------- | :--------------: | :------------------------------------------------------------------------------------------------------------------------------------------------------------------------ |
-| **Ingesta de Datos (data/raw)**           | ✅ **Completado** | Dataset v3 con 208 filas. Contiene 7 registros nuevos de Finca 6 con valores nulos en conductividad y disparidad en tipografía (inca_6 vs Finca_6, Hounstein, Normanda). |
-| **Validador de Datos (src/data)**         | ✅ **Completado** | DataValidator audita tipos, rangos fisiológicos y columnas obligatorias. Requiere normalización de fincas y manejo de nulos en conductividad.                             |
+| **Ingesta de Datos (data/raw)**           | ✅ **Completado** | Dataset v3: **209 filas, 6 fincas** (Finca_6 = 8 filas con 1 positivo), 8 nulos de conductividad. Fincas y razas ya normalizadas en el CSV. |
+| **Validador de Datos (src/data)**         | ✅ **Completado** | `DataValidator(feature_set="A"\|"B")`: A = laboratorio (con conductividad), B = desplegable (sin conductividad, pH obligatorio). |
 | **Ingeniería de Features (src/data)**     | ✅ **Completado** | FeaturePipelineBuilder con imputación mediana, escalado estándar y OneHotEncoder con manejo de categorías desconocidas.                                                   |
-| **Módulos de Entrenamiento (src/models)** | ✅ **Completado** | Los scripts no se pueden ejecutar de forma aislada desde src/models/ debido a problemas de sys.path y rutas relativas.                                                    |
+| **Módulos de Entrenamiento (src/models)** | ✅ **Completado** | Se ejecutan con `python main.py --feature-set A\|B`; incluyen IC bootstrap por finca y leave-one-farm-out. Los scripts sueltos requieren `python -m`. |
 |                                           |                  |                                                                                                                                                                           |
-**(Notebooks)** | ✅ **Completado** | Model_Analysis_and_Testing.ipynb actualmente opera con dummyDataGenerator.py. Próximo paso: migrar a datos reales. |
+| **Notebooks** | ⚠️ **Pendiente** | `Model_Analysis_and_Testing.ipynb` todavía usa `dummyDataGenerator.py`; migrar a datos reales. |
 | **Documento Académico (rtículo.md)** | ✅ **Completado** | Protocolo completo estructurado. Pendiente incorporar métricas reales obtenidas del entrenamiento del dataset v3 curado. |
 
 ---
@@ -68,3 +68,9 @@ Esta bóveda de Obsidian está estructurada de manera modular y atómica para op
 # Mejoras del proyecto
 
 Gracias a una revisión exhaustiva por parte del docente investigador a cargo, salen recomendaciones antes de la publicación como [[Cosas a mejorar del artículo.md]], se recomienda leer esta sección principalmente por la demostración profesional y académica que debe demostrarse en el proyecto
+
+---
+
+## Actualización 2026-11-01 — fase de implementación
+
+Se agregaron: Modelo B desplegable, exportación ONNX + `model_lite.json`, servidor FastAPI (`server/`), app Flutter (`mobile/`), protocolo CMT y la lista de cambios del artículo. Ver `README.md` y la carpeta `docs/`. Nota: `estado_de_vacunacion` **no** es constante (1 de 209 registros vale 1); `frecuencia_de_ordeno` sí lo es (=2). Los resultados siguen siendo preliminares.

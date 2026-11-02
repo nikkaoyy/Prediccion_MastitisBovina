@@ -1,5 +1,9 @@
 __pycache__/
 *.py[cod]
 .venv/
+.pytest_cache/
 src/data/artifacts/
 demo_reports/
+*.db
+server_data.db
+.~lock.*#

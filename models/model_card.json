@@ -1,0 +1,124 @@
+{
+  "bootstrap_ci_by_farm_at_alert_threshold": {
+    "balanced_accuracy": {
+      "ci_high": 0.9911504424778761,
+      "ci_low": 0.9515202076381164,
+      "n_valid_resamples": 2000,
+      "point": 0.9725239322533137
+    },
+    "precision": {
+      "ci_high": 1.0,
+      "ci_low": 0.9743589743589743,
+      "n_valid_resamples": 2000,
+      "point": 0.9907407407407407
+    },
+    "recall": {
+      "ci_high": 0.993006993006993,
+      "ci_low": 0.90625,
+      "n_valid_resamples": 2000,
+      "point": 0.9553571428571429
+    },
+    "roc_auc": {
+      "ci_high": 0.9995390855457227,
+      "ci_low": 0.9459459459459458,
+      "n_valid_resamples": 2000,
+      "point": 0.9814064801178202
+    }
+  },
+  "comparador_solo_ph_logistica_groupkfold5_umbral_0.5": {
+    "balanced_accuracy": 1.0,
+    "precision": 1.0,
+    "recall": 1.0,
+    "roc_auc": 1.0
+  },
+  "farms": 6,
+  "feature_set": "B",
+  "features": [
+    "edad",
+    "raza",
+    "numero_de_partos",
+    "volumen_de_leche",
+    "etapa_de_lactancia",
+    "antecedentes_de_mastitis",
+    "humedad",
+    "temperatura",
+    "ph_leche"
+  ],
+  "grouped_cv_5fold": {
+    "accuracy": 0.9712918660287081,
+    "balanced_accuracy": 0.9718335787923417,
+    "f1": 0.972972972972973,
+    "precision": 0.9818181818181818,
+    "recall": 0.9642857142857143,
+    "roc_auc": 0.9814064801178202
+  },
+  "leave_one_farm_out": {
+    "per_farm": {
+      "Finca_1": {
+        "accuracy": 0.9024390243902439,
+        "positives": 24,
+        "recall": 0.875,
+        "rows": 41
+      },
+      "Finca_2": {
+        "accuracy": 1.0,
+        "positives": 25,
+        "recall": 1.0,
+        "rows": 41
+      },
+      "Finca_3": {
+        "accuracy": 0.975609756097561,
+        "positives": 25,
+        "recall": 1.0,
+        "rows": 41
+      },
+      "Finca_4": {
+        "accuracy": 0.975609756097561,
+        "positives": 19,
+        "recall": 0.9473684210526315,
+        "rows": 41
+      },
+      "Finca_5": {
+        "accuracy": 1.0,
+        "positives": 18,
+        "recall": 1.0,
+        "rows": 37
+      },
+      "Finca_6": {
+        "accuracy": 1.0,
+        "positives": 1,
+        "recall": 1.0,
+        "rows": 8
+      }
+    },
+    "pooled": {
+      "balanced_accuracy": 0.9718335787923417,
+      "precision": 0.9818181818181818,
+      "recall": 0.9642857142857143,
+      "roc_auc": 0.9815905743740794
+    }
+  },
+  "model_version": "mastitis-B-lr-d4ae0119",
+  "oof_counts_by_risk_level": {
+    "positivos_en_alto": 107,
+    "positivos_en_bajo": 3,
+    "positivos_en_medio": 2,
+    "sanos_en_alto": 1,
+    "sanos_en_bajo": 92,
+    "sanos_en_medio": 4
+  },
+  "thresholds_oof": {
+    "alto": 0.5790255950607471,
+    "medio": 0.41477904389118503,
+    "target_recall_alto": 0.95,
+    "target_recall_medio": 0.97
+  },
+  "training_rows": 209,
+  "warnings": [
+    "Los umbrales alto/medio se eligieron y se reportan sobre las mismas predicciones OOF: las métricas a esos umbrales son optimistas. El IC bootstrap fija el umbral y remuestrea solo 6 fincas, por lo que subestima la incertidumbre.",
+    "Una regresión logística solo con pH obtiene un desempeño igual o mejor que el Modelo B de 9 variables (ver comparador); las variables adicionales no están justificadas empíricamente con esta muestra.",
+    "Datos de 6 fincas, una sola medición por animal: no hay validación externa.",
+    "El pH separa casi perfectamente las clases (posible circularidad con la verdad de referencia CMT); documentar el protocolo antes de afirmar generalización.",
+    "Estimación de riesgo de apoyo a la decisión. No es un diagnóstico y no sustituye la valoración veterinaria ni las pruebas confirmatorias (CMT)."
+  ]
+}

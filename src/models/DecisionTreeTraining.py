@@ -76,13 +76,15 @@ class DecisionTreeModelTrainer:
         random_state: int = 42,
         param_grid: dict[str, list[Any]] | None = None,
         n_jobs: int | None = 1,
+        feature_set: str = "A",
     ) -> None:
         self.n_splits = n_splits
         self.random_state = random_state
         self.param_grid = param_grid or self.DEFAULT_PARAM_GRID
         self.n_jobs = n_jobs
 
-        self.feature_builder = FeaturePipelineBuilder()
+        self.feature_set = feature_set.upper()
+        self.feature_builder = FeaturePipelineBuilder(self.feature_set)
         self.best_estimator_: Pipeline | None = None
         self.best_params_: dict[str, Any] | None = None
         self.best_score_: float | None = None

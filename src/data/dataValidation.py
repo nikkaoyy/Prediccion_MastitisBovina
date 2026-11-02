@@ -9,6 +9,50 @@ import numpy as np
 import pandas as pd
 
 
+# Conjuntos de variables predictoras.
+#   A: modelo de laboratorio / exploratorio (incluye conductividad eléctrica).
+#   B: modelo desplegable en la app (sin conductividad; pH obligatorio).
+FEATURE_SETS: dict[str, tuple[str, ...]] = {
+    "A": (
+        "edad",
+        "raza",
+        "numero_de_partos",
+        "volumen_de_leche",
+        "etapa_de_lactancia",
+        "frecuencia_de_ordeno",
+        "estado_de_vacunacion",
+        "antecedentes_de_mastitis",
+        "humedad",
+        "temperatura",
+        "ph_leche",
+        "conductividad_leche_ms_cm",
+    ),
+    "B": (
+        "edad",
+        "raza",
+        "numero_de_partos",
+        "volumen_de_leche",
+        "etapa_de_lactancia",
+        "antecedentes_de_mastitis",
+        "humedad",
+        "temperatura",
+        "ph_leche",
+    ),
+}
+
+
+def resolve_feature_set(name: str) -> tuple[str, ...]:
+    """Devuelve las columnas predictoras de un conjunto A/B."""
+
+    try:
+        return FEATURE_SETS[name.upper()]
+    except (KeyError, AttributeError):
+        raise ValueError(
+            f"Conjunto de variables desconocido: {name!r}. "
+            f"Use uno de {sorted(FEATURE_SETS)}."
+        ) from None
+
+
 class DataValidationError(ValueError):
     """Señala que el dataset no cumple el contrato clínico/técnico."""
 
@@ -50,20 +94,7 @@ class DataValidator:
 
     CATEGORICAL_COLUMNS = ("raza",)
 
-    FEATURE_COLUMNS = (
-        "edad",
-        "raza",
-        "numero_de_partos",
-        "volumen_de_leche",
-        "etapa_de_lactancia",
-        "frecuencia_de_ordeno",
-        "estado_de_vacunacion",
-        "antecedentes_de_mastitis",
-        "humedad",
-        "temperatura",
-        "ph_leche",
-        "conductividad_leche_ms_cm",
-    )
+    FEATURE_COLUMNS = FEATURE_SETS["A"]  # compatibilidad: conjunto A
 
     REQUIRED_COLUMNS = (GROUP_COLUMN, *FEATURE_COLUMNS, TARGET_COLUMN)
 
@@ -97,6 +128,21 @@ class DataValidator:
         TARGET_COLUMN: {0.0, 1.0},
     }
 
+    def __init__(self, feature_set: str = "A") -> None:
+        self.feature_set = feature_set.upper()
+        self.feature_columns = resolve_feature_set(self.feature_set)
+        self.required_columns = (
+            self.GROUP_COLUMN,
+            *self.feature_columns,
+            self.TARGET_COLUMN,
+        )
+        # Solo se auditan las columnas numéricas que el conjunto utiliza.
+        self.numeric_columns = tuple(
+            column
+            for column in self.NUMERIC_COLUMNS
+            if column in self.required_columns
+        )
+
     def validate_and_clean(
         self, data: pd.DataFrame
     ) -> tuple[pd.DataFrame, DataQualityReport]:
@@ -107,7 +153,7 @@ class DataValidator:
 
         coercions_to_missing: dict[str, int] = {}
 
-        for column in self.NUMERIC_COLUMNS:
+        for column in self.numeric_columns:
             parsed = self._to_numeric(cleaned[column])
 
             coerced = int(
@@ -128,6 +174,13 @@ class DataValidator:
             cleaned[column] = cleaned[column].astype("string").str.strip()
             cleaned.loc[cleaned[column].eq(""), column] = pd.NA
 
+        # Las categóricas faltantes deben ser np.nan (objeto) para que
+        # SimpleImputer las reconozca; pd.NA rompe el ajuste.
+        for column in self.CATEGORICAL_COLUMNS:
+            cleaned[column] = (
+                cleaned[column].astype(object).where(cleaned[column].notna(), np.nan)
+            )
+
         self._validate_required_non_null(cleaned)
         self._validate_ranges_and_allowed_values(cleaned)
         self._validate_group_values(cleaned)
@@ -136,7 +189,7 @@ class DataValidator:
             row_count=int(len(cleaned)),
             missing_by_column={
                 column: int(cleaned[column].isna().sum())
-                for column in self.REQUIRED_COLUMNS
+                for column in self.required_columns
             },
             coercions_to_missing=coercions_to_missing,
             unique_farms=int(
@@ -150,7 +203,7 @@ class DataValidator:
         if data.empty:
             raise DataValidationError("El dataset está vacío.")
 
-        missing = sorted(set(self.REQUIRED_COLUMNS) - set(data.columns))
+        missing = sorted(set(self.required_columns) - set(data.columns))
 
         if missing:
             raise DataValidationError(
@@ -202,6 +255,9 @@ class DataValidator:
         violations: list[str] = []
 
         for column, (minimum, maximum) in self.CLINICAL_RANGES.items():
+            if column not in self.required_columns:
+                continue
+
             invalid = (
                 data[column].notna()
                 & ~data[column].between(minimum, maximum)
@@ -214,6 +270,9 @@ class DataValidator:
                 )
 
         for column in self.INTEGER_COLUMNS:
+            if column not in self.required_columns:
+                continue
+
             values = data[column].dropna()
             invalid = ~np.isclose(values, np.round(values))
 
@@ -223,6 +282,9 @@ class DataValidator:
                 )
 
         for column, allowed in self.ALLOWED_VALUES.items():
+            if column not in self.required_columns:
+                continue
+
             invalid = data[column].notna() & ~data[column].isin(allowed)
 
             if invalid.any():
