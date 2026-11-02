@@ -48,6 +48,13 @@ Cada modelo también corre por separado desde la raíz, con el conjunto A por de
 ```
 Regenera `models/` (model.onnx, model_lite.json, manifest.json, model_card.json, parity_fixtures.json, drift_baseline.json) y copia `model_lite.json` a `mobile/assets/`. **Ejecutar siempre tras cambiar datos o código del modelo**, porque la app y el servidor leen estos archivos.
 
+Para exportar el árbol de decisión (conjunto A) a JSON autocontenido, sin ONNX:
+```bash
+.venv/bin/python -m src.models.DecisionTreeTraining
+.venv/bin/python -m src.export.export_tree     # artifacts/models/model.json
+```
+El intérprete de referencia es `src/export/tree_eval.py`. Un cliente debe comparar `float32(valor) <= umbral`, porque scikit-learn hace lo mismo. `model.json` no reemplaza a `model_lite.json`: la app y el servidor siguen usando el Modelo B.
+
 ### 1.5 Servidor
 ```bash
 # 1) Registrar una finca y un dispositivo (el token se muestra una sola vez)
