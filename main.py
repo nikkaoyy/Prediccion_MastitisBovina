@@ -8,7 +8,7 @@ from pathlib import Path
 from typing import Any
 
 from src.data.curation import load_curated_dataset
-from src.data.dataValidation import DataValidator
+from src.data.dataValidation import FEATURE_SETS, DataValidator
 from src.data.dummyDataGenerator import generate_dummy_data
 from src.models.DecisionTreeTraining import DecisionTreeModelTrainer
 from src.models.RandomForest import RandomForestModelTrainer
@@ -172,11 +172,12 @@ def parse_args() -> argparse.Namespace:
 
     parser.add_argument(
         "--feature-set",
-        choices=["A", "B"],
+        choices=sorted(FEATURE_SETS),
         default="B",
         help=(
             "A: laboratorio (con conductividad). "
-            "B: desplegable en la app (sin conductividad, pH obligatorio)."
+            "B: desplegable en la app (sin conductividad, pH obligatorio). "
+            "CAMPO: observable en campo (sin pH ni conductividad)."
         ),
     )
 

@@ -68,6 +68,16 @@ Alternativas descartadas:
 
 **Limitación medida.** Las medianas de entrenamiento por pliegue van de 5,605 a 5,775 mS/cm. El máximo en vacas sanas es 5,25 y el mínimo con mastitis es 5,45, así que el valor imputado cae dentro del rango de mastitis: las 8 filas de Finca 6, 7 de ellas sanas, entran al modelo con conductividad de vaca enferma. Finca 6 no aporta evidencia sobre la conductividad.
 
+El efecto depende del modelo (conjunto A, datos reales, predicciones fuera de pliegue):
+
+| Modelo | Falsos positivos en Finca 6 | Falsos positivos totales |
+|---|---:|---:|
+| Árbol de decisión | 0 | 0 |
+| Random Forest | 4 | 4 |
+| Regresión logística | 1 | 1 |
+
+El árbol no se ve afectado porque nunca usa la conductividad. En Random Forest y regresión logística, todos los falsos positivos caen en esas 8 filas. Con n = 8 esto muestra el mecanismo, no su magnitud general. Detalle en `docs/TABLA_TRANSPARENCIA_METRICAS.md`.
+
 ## Hallazgos del historial que no se revirtieron
 
 Son decisiones del autor y quedan señaladas para que las confirme contra la libreta de campo:

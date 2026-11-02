@@ -12,6 +12,9 @@ import pandas as pd
 # Conjuntos de variables predictoras.
 #   A: modelo de laboratorio / exploratorio (incluye conductividad eléctrica).
 #   B: modelo desplegable en la app (sin conductividad; pH obligatorio).
+#   CAMPO: solo lo observable en campo, sin pH ni conductividad. Incluye
+#     frecuencia_de_ordeno (constante) y estado_de_vacunacion (1 de 209 en 1)
+#     por decisión de alcance; retirarlas le corresponde a los autores.
 FEATURE_SETS: dict[str, tuple[str, ...]] = {
     "A": (
         "edad",
@@ -38,11 +41,21 @@ FEATURE_SETS: dict[str, tuple[str, ...]] = {
         "temperatura",
         "ph_leche",
     ),
+    "CAMPO": (
+        "edad",
+        "raza",
+        "numero_de_partos",
+        "volumen_de_leche",
+        "etapa_de_lactancia",
+        "frecuencia_de_ordeno",
+        "estado_de_vacunacion",
+        "antecedentes_de_mastitis",
+    ),
 }
 
 
 def resolve_feature_set(name: str) -> tuple[str, ...]:
-    """Devuelve las columnas predictoras de un conjunto A/B."""
+    """Devuelve las columnas predictoras de un conjunto registrado."""
 
     try:
         return FEATURE_SETS[name.upper()]

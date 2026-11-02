@@ -25,7 +25,7 @@ Ya existe un `.venv/` en esta máquina; basta con reinstalar si cambian dependen
 
 ### 1.2 Verificar ML y servidor
 ```bash
-.venv/bin/python -m pytest -q          # esperado: 45 passed (~80 s)
+.venv/bin/python -m pytest -q          # esperado: 94 passed (~3 min)
 ```
 
 ### 1.3 Entrenar y evaluar
@@ -54,6 +54,11 @@ Para exportar el árbol de decisión (conjunto A) a JSON autocontenido, sin ONNX
 .venv/bin/python -m src.export.export_tree     # artifacts/models/model.json
 ```
 El intérprete de referencia es `src/export/tree_eval.py`. Un cliente debe comparar `float32(valor) <= umbral`, porque scikit-learn hace lo mismo. `model.json` no reemplaza a `model_lite.json`: la app y el servidor siguen usando el Modelo B.
+
+Para comparar el modelo completo con el de campo (8 variables, sin pH ni conductividad):
+```bash
+.venv/bin/python -m src.models.compare_variants   # docs/TABLA_TRANSPARENCIA_METRICAS.md
+```
 
 ### 1.5 Servidor
 ```bash

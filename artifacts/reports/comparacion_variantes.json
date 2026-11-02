@@ -1,0 +1,1010 @@
+{
+  "dataset": "datos_entrenamiento_mastitis-v3.csv",
+  "dataset_sha256": "a9b38d30ef23a6a25ccb6614944482183480e9e892cee2d9cdf2468492c03c9f",
+  "datos": "reales",
+  "farms": 6,
+  "importance_method": "Permutación sobre la finca de prueba, ΔPR-AUC, 20 repeticiones",
+  "results": {
+    "decision_tree": {
+      "A": {
+        "confusion_oof": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 97,
+          "tp": 112
+        },
+        "confusion_small_farm": {
+          "fn": 0,
+          "fp": 0,
+          "tn": 7,
+          "tp": 1
+        },
+        "folds": [
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "gini",
+              "max_depth": 3,
+              "min_samples_leaf": 1
+            },
+            "f1": 1.0,
+            "fold": 1,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.4634146341463415,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_4"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "gini",
+              "max_depth": 3,
+              "min_samples_leaf": 1
+            },
+            "f1": 1.0,
+            "fold": 2,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.6097560975609756,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_3"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "gini",
+              "max_depth": 3,
+              "min_samples_leaf": 1
+            },
+            "f1": 1.0,
+            "fold": 3,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.6097560975609756,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_2"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "gini",
+              "max_depth": 3,
+              "min_samples_leaf": 1
+            },
+            "f1": 1.0,
+            "fold": 4,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.5853658536585366,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_1"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "gini",
+              "max_depth": 3,
+              "min_samples_leaf": 1
+            },
+            "f1": 1.0,
+            "fold": 5,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.4222222222222222,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_5",
+              "Finca_6"
+            ],
+            "test_rows": 45
+          }
+        ],
+        "importance": {
+          "antecedentes_de_mastitis": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "conductividad_leche_ms_cm": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "edad": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "estado_de_vacunacion": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "etapa_de_lactancia": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "frecuencia_de_ordeno": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "humedad": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "numero_de_partos": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "ph_leche": {
+            "mean": 0.4664745134750656,
+            "sd": 0.08383532466890685
+          },
+          "raza": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "temperatura": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "volumen_de_leche": {
+            "mean": 0.0,
+            "sd": 0.0
+          }
+        },
+        "summary": {
+          "f1": {
+            "mean": 1.0,
+            "sd": 0.0
+          },
+          "pr_auc": {
+            "mean": 1.0,
+            "sd": 0.0
+          },
+          "precision": {
+            "mean": 1.0,
+            "sd": 0.0
+          },
+          "recall": {
+            "mean": 1.0,
+            "sd": 0.0
+          }
+        }
+      },
+      "CAMPO": {
+        "confusion_oof": {
+          "fn": 27,
+          "fp": 29,
+          "tn": 68,
+          "tp": 85
+        },
+        "confusion_small_farm": {
+          "fn": 0,
+          "fp": 4,
+          "tn": 3,
+          "tp": 1
+        },
+        "folds": [
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "gini",
+              "max_depth": 5,
+              "min_samples_leaf": 1
+            },
+            "f1": 0.7804878048780488,
+            "fold": 1,
+            "pr_auc": 0.7828623600216138,
+            "precision": 0.7272727272727273,
+            "prevalence": 0.4634146341463415,
+            "recall": 0.8421052631578947,
+            "test_farms": [
+              "Finca_4"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "entropy",
+              "max_depth": 3,
+              "min_samples_leaf": 1
+            },
+            "f1": 0.76,
+            "fold": 2,
+            "pr_auc": 0.8571226480836237,
+            "precision": 0.76,
+            "prevalence": 0.6097560975609756,
+            "recall": 0.76,
+            "test_farms": [
+              "Finca_3"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "entropy",
+              "max_depth": 5,
+              "min_samples_leaf": 1
+            },
+            "f1": 0.8636363636363636,
+            "fold": 3,
+            "pr_auc": 0.9730541871921182,
+            "precision": 1.0,
+            "prevalence": 0.6097560975609756,
+            "recall": 0.76,
+            "test_farms": [
+              "Finca_2"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "entropy",
+              "max_depth": null,
+              "min_samples_leaf": 5
+            },
+            "f1": 0.6818181818181818,
+            "fold": 4,
+            "pr_auc": 0.6969354366839122,
+            "precision": 0.75,
+            "prevalence": 0.5853658536585366,
+            "recall": 0.625,
+            "test_farms": [
+              "Finca_1"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "criterion": "entropy",
+              "max_depth": null,
+              "min_samples_leaf": 5
+            },
+            "f1": 0.6808510638297872,
+            "fold": 5,
+            "pr_auc": 0.7055367678014759,
+            "precision": 0.5714285714285714,
+            "prevalence": 0.4222222222222222,
+            "recall": 0.8421052631578947,
+            "test_farms": [
+              "Finca_5",
+              "Finca_6"
+            ],
+            "test_rows": 45
+          }
+        ],
+        "importance": {
+          "antecedentes_de_mastitis": {
+            "mean": 0.06364553691640425,
+            "sd": 0.04974737020120108
+          },
+          "edad": {
+            "mean": 0.002774704794840329,
+            "sd": 0.007271073700479765
+          },
+          "estado_de_vacunacion": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "etapa_de_lactancia": {
+            "mean": 0.006411172873688922,
+            "sd": 0.012303967235574961
+          },
+          "frecuencia_de_ordeno": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "numero_de_partos": {
+            "mean": 0.0449787961841643,
+            "sd": 0.06341684675399072
+          },
+          "raza": {
+            "mean": 0.023377751803304418,
+            "sd": 0.0398012845432091
+          },
+          "volumen_de_leche": {
+            "mean": 0.17987433230846955,
+            "sd": 0.11084037088693185
+          }
+        },
+        "summary": {
+          "f1": {
+            "mean": 0.7533586828324763,
+            "sd": 0.07634897075105641
+          },
+          "pr_auc": {
+            "mean": 0.8031022799565488,
+            "sd": 0.11511074350068624
+          },
+          "precision": {
+            "mean": 0.7617402597402597,
+            "sd": 0.15355383057238986
+          },
+          "recall": {
+            "mean": 0.7658421052631579,
+            "sd": 0.08879315501057104
+          }
+        }
+      }
+    },
+    "logistic_regression": {
+      "A": {
+        "confusion_oof": {
+          "fn": 3,
+          "fp": 1,
+          "tn": 96,
+          "tp": 109
+        },
+        "confusion_small_farm": {
+          "fn": 0,
+          "fp": 1,
+          "tn": 6,
+          "tp": 1
+        },
+        "folds": [
+          {
+            "best_params": {
+              "C": 0.1,
+              "class_weight": "balanced"
+            },
+            "f1": 1.0,
+            "fold": 1,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.4634146341463415,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_4"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "C": 0.1,
+              "class_weight": "balanced"
+            },
+            "f1": 1.0,
+            "fold": 2,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.6097560975609756,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_3"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "C": 0.1,
+              "class_weight": "balanced"
+            },
+            "f1": 1.0,
+            "fold": 3,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.6097560975609756,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_2"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "C": 0.01,
+              "class_weight": "balanced"
+            },
+            "f1": 0.9333333333333333,
+            "fold": 4,
+            "pr_auc": 0.9844117647058823,
+            "precision": 1.0,
+            "prevalence": 0.5853658536585366,
+            "recall": 0.875,
+            "test_farms": [
+              "Finca_1"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "C": 0.1,
+              "class_weight": "balanced"
+            },
+            "f1": 0.9743589743589743,
+            "fold": 5,
+            "pr_auc": 0.9999999999999998,
+            "precision": 0.95,
+            "prevalence": 0.4222222222222222,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_5",
+              "Finca_6"
+            ],
+            "test_rows": 45
+          }
+        ],
+        "importance": {
+          "antecedentes_de_mastitis": {
+            "mean": 0.0013234730844839259,
+            "sd": 0.0029593757832973803
+          },
+          "conductividad_leche_ms_cm": {
+            "mean": 0.0973630921654158,
+            "sd": 0.028291698304624576
+          },
+          "edad": {
+            "mean": 0.0005710133876801926,
+            "sd": 0.0012046180320063051
+          },
+          "estado_de_vacunacion": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "etapa_de_lactancia": {
+            "mean": 0.00034889227607237894,
+            "sd": 0.000761318390048027
+          },
+          "frecuencia_de_ordeno": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "humedad": {
+            "mean": 0.0006720320937232927,
+            "sd": 0.0010876281943753001
+          },
+          "numero_de_partos": {
+            "mean": 0.0007095433423185604,
+            "sd": 0.0015141046422232122
+          },
+          "ph_leche": {
+            "mean": 0.06873625945162246,
+            "sd": 0.04040265651233144
+          },
+          "raza": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "temperatura": {
+            "mean": 0.00017249004865104388,
+            "sd": 0.0002455761576630202
+          },
+          "volumen_de_leche": {
+            "mean": -0.0014271734250779857,
+            "sd": 0.00516438925746164
+          }
+        },
+        "summary": {
+          "f1": {
+            "mean": 0.9815384615384616,
+            "sd": 0.029145173822323733
+          },
+          "pr_auc": {
+            "mean": 0.9968823529411764,
+            "sd": 0.006971270753381688
+          },
+          "precision": {
+            "mean": 0.99,
+            "sd": 0.022360679774997918
+          },
+          "recall": {
+            "mean": 0.975,
+            "sd": 0.05590169943749474
+          }
+        }
+      },
+      "CAMPO": {
+        "confusion_oof": {
+          "fn": 32,
+          "fp": 30,
+          "tn": 67,
+          "tp": 80
+        },
+        "confusion_small_farm": {
+          "fn": 0,
+          "fp": 4,
+          "tn": 3,
+          "tp": 1
+        },
+        "folds": [
+          {
+            "best_params": {
+              "C": 0.01,
+              "class_weight": "balanced"
+            },
+            "f1": 0.7,
+            "fold": 1,
+            "pr_auc": 0.7993216586429883,
+            "precision": 0.6666666666666666,
+            "prevalence": 0.4634146341463415,
+            "recall": 0.7368421052631579,
+            "test_farms": [
+              "Finca_4"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "C": 0.01,
+              "class_weight": "balanced"
+            },
+            "f1": 0.7142857142857143,
+            "fold": 2,
+            "pr_auc": 0.84641825015373,
+            "precision": 0.8823529411764706,
+            "prevalence": 0.6097560975609756,
+            "recall": 0.6,
+            "test_farms": [
+              "Finca_3"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "C": 0.01,
+              "class_weight": "balanced"
+            },
+            "f1": 0.8979591836734694,
+            "fold": 3,
+            "pr_auc": 0.9687930296870249,
+            "precision": 0.9166666666666666,
+            "prevalence": 0.6097560975609756,
+            "recall": 0.88,
+            "test_farms": [
+              "Finca_2"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "C": 10.0,
+              "class_weight": "balanced"
+            },
+            "f1": 0.5581395348837209,
+            "fold": 4,
+            "pr_auc": 0.7487166516378123,
+            "precision": 0.631578947368421,
+            "prevalence": 0.5853658536585366,
+            "recall": 0.5,
+            "test_farms": [
+              "Finca_1"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "C": 0.01,
+              "class_weight": null
+            },
+            "f1": 0.7083333333333334,
+            "fold": 5,
+            "pr_auc": 0.7110064877911136,
+            "precision": 0.5862068965517241,
+            "prevalence": 0.4222222222222222,
+            "recall": 0.8947368421052632,
+            "test_farms": [
+              "Finca_5",
+              "Finca_6"
+            ],
+            "test_rows": 45
+          }
+        ],
+        "importance": {
+          "antecedentes_de_mastitis": {
+            "mean": 0.062056798806498815,
+            "sd": 0.0312851965398776
+          },
+          "edad": {
+            "mean": -0.008831010758114996,
+            "sd": 0.030275530161965006
+          },
+          "estado_de_vacunacion": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "etapa_de_lactancia": {
+            "mean": 0.006675688585601115,
+            "sd": 0.008161749736829768
+          },
+          "frecuencia_de_ordeno": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "numero_de_partos": {
+            "mean": 0.03205280161069997,
+            "sd": 0.08111378834630054
+          },
+          "raza": {
+            "mean": 0.001084407942654413,
+            "sd": 0.0021432807818336543
+          },
+          "volumen_de_leche": {
+            "mean": 0.09138267781816244,
+            "sd": 0.031343640054057896
+          }
+        },
+        "summary": {
+          "f1": {
+            "mean": 0.7157435532352476,
+            "sd": 0.1207750581643573
+          },
+          "pr_auc": {
+            "mean": 0.8148512155825337,
+            "sd": 0.10011647588980042
+          },
+          "precision": {
+            "mean": 0.7366944236859897,
+            "sd": 0.1518272520816286
+          },
+          "recall": {
+            "mean": 0.7223157894736842,
+            "sd": 0.17261938339463997
+          }
+        }
+      }
+    },
+    "random_forest": {
+      "A": {
+        "confusion_oof": {
+          "fn": 0,
+          "fp": 4,
+          "tn": 93,
+          "tp": 112
+        },
+        "confusion_small_farm": {
+          "fn": 0,
+          "fp": 4,
+          "tn": 3,
+          "tp": 1
+        },
+        "folds": [
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": 5,
+              "min_samples_leaf": 5,
+              "n_estimators": 50
+            },
+            "f1": 1.0,
+            "fold": 1,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.4634146341463415,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_4"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": 5,
+              "min_samples_leaf": 5,
+              "n_estimators": 100
+            },
+            "f1": 1.0,
+            "fold": 2,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.6097560975609756,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_3"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": 5,
+              "min_samples_leaf": 1,
+              "n_estimators": 50
+            },
+            "f1": 1.0,
+            "fold": 3,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.6097560975609756,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_2"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": 5,
+              "min_samples_leaf": 1,
+              "n_estimators": 100
+            },
+            "f1": 1.0,
+            "fold": 4,
+            "pr_auc": 1.0,
+            "precision": 1.0,
+            "prevalence": 0.5853658536585366,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_1"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": 5,
+              "min_samples_leaf": 1,
+              "n_estimators": 50
+            },
+            "f1": 0.9047619047619048,
+            "fold": 5,
+            "pr_auc": 0.9999999999999999,
+            "precision": 0.8260869565217391,
+            "prevalence": 0.4222222222222222,
+            "recall": 1.0,
+            "test_farms": [
+              "Finca_5",
+              "Finca_6"
+            ],
+            "test_rows": 45
+          }
+        ],
+        "importance": {
+          "antecedentes_de_mastitis": {
+            "mean": 1.5543122344752196e-17,
+            "sd": 6.596257219332524e-17
+          },
+          "conductividad_leche_ms_cm": {
+            "mean": 0.019700045253604734,
+            "sd": 0.04267225312938627
+          },
+          "edad": {
+            "mean": 2.3314683517128283e-17,
+            "sd": 3.972054645195637e-17
+          },
+          "estado_de_vacunacion": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "etapa_de_lactancia": {
+            "mean": 4.440892098500625e-17,
+            "sd": 1.2337969962857224e-16
+          },
+          "frecuencia_de_ordeno": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "humedad": {
+            "mean": -7.771561172376097e-18,
+            "sd": 5.3762772068935985e-17
+          },
+          "numero_de_partos": {
+            "mean": 3.663735981263017e-17,
+            "sd": 9.466238347540659e-17
+          },
+          "ph_leche": {
+            "mean": 0.15981092609955344,
+            "sd": 0.02516520083376827
+          },
+          "raza": {
+            "mean": -6.6613381477509375e-18,
+            "sd": 6.34626244312555e-17
+          },
+          "temperatura": {
+            "mean": 1.4432899320127032e-17,
+            "sd": 9.18537636701491e-17
+          },
+          "volumen_de_leche": {
+            "mean": 9.992007221626408e-18,
+            "sd": 2.432376777795247e-17
+          }
+        },
+        "summary": {
+          "f1": {
+            "mean": 0.980952380952381,
+            "sd": 0.04259177099999599
+          },
+          "pr_auc": {
+            "mean": 1.0,
+            "sd": 5.551115123125783e-17
+          },
+          "precision": {
+            "mean": 0.9652173913043478,
+            "sd": 0.07777627747825355
+          },
+          "recall": {
+            "mean": 1.0,
+            "sd": 0.0
+          }
+        }
+      },
+      "CAMPO": {
+        "confusion_oof": {
+          "fn": 31,
+          "fp": 26,
+          "tn": 71,
+          "tp": 81
+        },
+        "confusion_small_farm": {
+          "fn": 1,
+          "fp": 5,
+          "tn": 2,
+          "tp": 0
+        },
+        "folds": [
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": null,
+              "min_samples_leaf": 5,
+              "n_estimators": 100
+            },
+            "f1": 0.7619047619047619,
+            "fold": 1,
+            "pr_auc": 0.8529303006180959,
+            "precision": 0.6956521739130435,
+            "prevalence": 0.4634146341463415,
+            "recall": 0.8421052631578947,
+            "test_farms": [
+              "Finca_4"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": null,
+              "min_samples_leaf": 5,
+              "n_estimators": 50
+            },
+            "f1": 0.65,
+            "fold": 2,
+            "pr_auc": 0.8970129412714554,
+            "precision": 0.8666666666666667,
+            "prevalence": 0.6097560975609756,
+            "recall": 0.52,
+            "test_farms": [
+              "Finca_3"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": null,
+              "min_samples_leaf": 1,
+              "n_estimators": 50
+            },
+            "f1": 0.851063829787234,
+            "fold": 3,
+            "pr_auc": 0.9629519100223757,
+            "precision": 0.9090909090909091,
+            "prevalence": 0.6097560975609756,
+            "recall": 0.8,
+            "test_farms": [
+              "Finca_2"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": 5,
+              "min_samples_leaf": 1,
+              "n_estimators": 100
+            },
+            "f1": 0.6382978723404256,
+            "fold": 4,
+            "pr_auc": 0.8222483029932628,
+            "precision": 0.6521739130434783,
+            "prevalence": 0.5853658536585366,
+            "recall": 0.625,
+            "test_farms": [
+              "Finca_1"
+            ],
+            "test_rows": 41
+          },
+          {
+            "best_params": {
+              "class_weight": "balanced",
+              "max_depth": 5,
+              "min_samples_leaf": 1,
+              "n_estimators": 50
+            },
+            "f1": 0.7906976744186046,
+            "fold": 5,
+            "pr_auc": 0.833181679891719,
+            "precision": 0.7083333333333334,
+            "prevalence": 0.4222222222222222,
+            "recall": 0.8947368421052632,
+            "test_farms": [
+              "Finca_5",
+              "Finca_6"
+            ],
+            "test_rows": 45
+          }
+        ],
+        "importance": {
+          "antecedentes_de_mastitis": {
+            "mean": 0.0481345489534677,
+            "sd": 0.0546659627097503
+          },
+          "edad": {
+            "mean": 0.003401148425369112,
+            "sd": 0.004323329447559416
+          },
+          "estado_de_vacunacion": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "etapa_de_lactancia": {
+            "mean": 0.0181367973992592,
+            "sd": 0.025894285791896527
+          },
+          "frecuencia_de_ordeno": {
+            "mean": 0.0,
+            "sd": 0.0
+          },
+          "numero_de_partos": {
+            "mean": 0.014440125145216986,
+            "sd": 0.013827959346352552
+          },
+          "raza": {
+            "mean": 0.007399450828260022,
+            "sd": 0.017723010511677496
+          },
+          "volumen_de_leche": {
+            "mean": 0.15971817925308054,
+            "sd": 0.106949230315338
+          }
+        },
+        "summary": {
+          "f1": {
+            "mean": 0.7383928276902052,
+            "sd": 0.09194516685079804
+          },
+          "pr_auc": {
+            "mean": 0.8736650269593816,
+            "sd": 0.05751039549395746
+          },
+          "precision": {
+            "mean": 0.7663833992094863,
+            "sd": 0.11384055760021358
+          },
+          "recall": {
+            "mean": 0.7363684210526317,
+            "sd": 0.1577403192283105
+          }
+        }
+      }
+    }
+  },
+  "rows": 209,
+  "scikit_learn": "1.9.1",
+  "separation": {
+    "conductividad_leche_ms_cm": {
+      "max_sanas": 5.25,
+      "min_mastitis": 5.45
+    },
+    "ph_leche": {
+      "max_sanas": 6.72,
+      "min_mastitis": 6.75
+    }
+  },
+  "validation": "GroupKFold(5) por finca, búsqueda anidada optimizando F1"
+}
