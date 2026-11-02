@@ -34,9 +34,9 @@ class RandomForestModelTrainer:
     """Gestiona tuning, GroupKFold y persistencia del modelo Random Forest."""
 
     DEFAULT_PARAM_GRID: dict[str, list[Any]] = {
-        "classifier__n_estimators": [50],
+        "classifier__n_estimators": [50, 100],
         "classifier__max_depth": [5, None],
-        "classifier__min_samples_split": [2],
+        "classifier__min_samples_leaf": [1, 5],
         "classifier__class_weight": ["balanced"],
     }
 
@@ -214,3 +214,9 @@ class RandomForestModelTrainer:
         labels = set(pd.Series(y).dropna().astype(int).unique())
         if labels != {0, 1}:
             raise ValueError("y debe contener exactamente las clases binarias 0 y 1.")
+
+
+if __name__ == "__main__":
+    from src.models.cli import run_training
+
+    run_training(RandomForestModelTrainer, "random_forest")

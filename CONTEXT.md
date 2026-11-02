@@ -33,7 +33,14 @@ Ya existe un `.venv/` en esta máquina; basta con reinstalar si cambian dependen
 .venv/bin/python main.py --feature-set B    # Modelo desplegable (default)
 .venv/bin/python main.py --feature-set A    # Modelo de laboratorio (con conductividad)
 ```
-Salidas: `demo_reports/` (métricas JSON, matrices de confusión, árbol) y `src/data/artifacts/` (pipelines `.pkl`). Ambas carpetas están en `.gitignore`.
+Salidas: `artifacts/reports/` (métricas JSON, matrices de confusión, árbol) y `artifacts/models/` (pipelines `.pkl`). Las figuras antiguas que cita el artículo siguen en `demo_reports/`, que ya no se regenera.
+
+Cada modelo también corre por separado desde la raíz, con el conjunto A por defecto:
+```bash
+.venv/bin/python -m src.models.DecisionTreeTraining
+.venv/bin/python -m src.models.RandomForest
+.venv/bin/python -m src.models.LogisticalRegresion
+```
 
 ### 1.4 Exportar el modelo desplegable
 ```bash
@@ -203,7 +210,7 @@ Las notas anteriores (p. ej. `CORE DEL PROYECTO.md`) se actualizaron en su tabla
 | Artículo (.docx) | No modificado; correcciones en `docs/cambios_articulo.md` |
 | Commits | Ninguno realizado; hay cambios sin commitear |
 | Notas de Obsidian antiguas (208/7 filas) | Corregir en cualquier nota que aún lo diga |
-| `demo_reports/` | Puede estar desactualizado; regenerar con `main.py` |
+| `demo_reports/` | Figuras antiguas citadas por el artículo; ya no se regeneran (`main.py` escribe en `artifacts/reports/`) |
 
 ---
 

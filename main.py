@@ -13,6 +13,7 @@ from src.data.dummyDataGenerator import generate_dummy_data
 from src.models.DecisionTreeTraining import DecisionTreeModelTrainer
 from src.models.RandomForest import RandomForestModelTrainer
 from src.models.LogisticalRegresion import LogisticRegressionModelTrainer
+from src.paths import DATASET_PATH, MODELS_DIR, REPORTS_DIR
 from src.models.evaluation import (
     cluster_bootstrap_ci,
     leave_one_farm_out,
@@ -21,16 +22,11 @@ from src.models.evaluation import (
 )
 
 
-PROJECT_ROOT = Path(__file__).resolve().parent
-DEFAULT_DATASET = (
-    PROJECT_ROOT / "data" / "raw" / "datos_entrenamiento_mastitis-v3.csv"
-)
-
 
 def run(
     data_path: str | Path,
-    artifacts_dir: str | Path = PROJECT_ROOT / "src/data/artifacts",
-    reports_dir: str | Path = PROJECT_ROOT / "demo_reports",
+    artifacts_dir: str | Path = MODELS_DIR,
+    reports_dir: str | Path = REPORTS_DIR,
     use_dummy: bool = False,
     feature_set: str = "B",
 ) -> dict[str, Any]:
@@ -159,19 +155,19 @@ def parse_args() -> argparse.Namespace:
     parser.add_argument(
         "--data",
         type=Path,
-        default=DEFAULT_DATASET,
+        default=DATASET_PATH,
     )
 
     parser.add_argument(
         "--artifacts-dir",
         type=Path,
-        default=PROJECT_ROOT / "src/data/artifacts",
+        default=MODELS_DIR,
     )
 
     parser.add_argument(
         "--reports-dir",
         type=Path,
-        default=PROJECT_ROOT / "demo_reports",
+        default=REPORTS_DIR,
     )
 
     parser.add_argument(

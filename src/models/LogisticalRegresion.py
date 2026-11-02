@@ -34,9 +34,8 @@ class LogisticRegressionModelTrainer:
     """Gestiona tuning, GroupKFold y persistencia del modelo de Regresión Logística."""
 
     DEFAULT_PARAM_GRID: dict[str, list[Any]] = {
-        "classifier__C": [1.0],
-        "classifier__penalty": ["l2"],
-        "classifier__class_weight": ["balanced"],
+        "classifier__C": [0.01, 0.1, 1.0, 10.0],
+        "classifier__class_weight": ["balanced", None],
     }
 
     def __init__(
@@ -215,3 +214,9 @@ class LogisticRegressionModelTrainer:
         labels = set(pd.Series(y).dropna().astype(int).unique())
         if labels != {0, 1}:
             raise ValueError("y debe contener exactamente las clases binarias 0 y 1.")
+
+
+if __name__ == "__main__":
+    from src.models.cli import run_training
+
+    run_training(LogisticRegressionModelTrainer, "logistic_regression")

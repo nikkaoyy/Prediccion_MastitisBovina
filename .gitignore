@@ -4,6 +4,7 @@ __pycache__/
 .pytest_cache/
 src/data/artifacts/
 demo_reports/
+artifacts/reports/*.png
 *.db
 server_data.db
 .~lock.*#

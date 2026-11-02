@@ -40,6 +40,13 @@ DEFAULT_DATASET = PROJECT_ROOT / "data" / "raw" / "datos_entrenamiento_mastitis-
 DEFAULT_OUTPUT = PROJECT_ROOT / "models"
 FEATURE_SET = "B"
 
+# Hiperparámetros congelados del modelo desplegado: la búsqueda del entrenador
+# puede cambiar sin mover model_lite.json ni su versión.
+DEPLOYED_PARAM_GRID = {
+    "classifier__C": [1.0],
+    "classifier__class_weight": ["balanced"],
+}
+
 DISCLAIMER = (
     "Estimación de riesgo de apoyo a la decisión. No es un diagnóstico y no "
     "sustituye la valoración veterinaria ni las pruebas confirmatorias (CMT)."
@@ -250,7 +257,11 @@ def main(argv: list[str] | None = None) -> dict:
     groups = clean[DataValidator.GROUP_COLUMN]
 
     trainer = LogisticRegressionModelTrainer(
-        n_splits=5, random_state=42, n_jobs=1, feature_set=FEATURE_SET
+        n_splits=5,
+        random_state=42,
+        param_grid=DEPLOYED_PARAM_GRID,
+        n_jobs=1,
+        feature_set=FEATURE_SET,
     )
     trainer.fit(X, y, groups)
     evaluation = trainer.evaluate_grouped_cv(X, y, groups)

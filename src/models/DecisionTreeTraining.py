@@ -63,10 +63,9 @@ class DecisionTreeModelTrainer:
     """Gestiona tuning, GroupKFold y persistencia del modelo."""
 
     DEFAULT_PARAM_GRID: dict[str, list[Any]] = {
-        "classifier__criterion": ["gini"],
-        "classifier__max_depth": [5, None],
-        "classifier__min_samples_split": [2],
-        "classifier__min_samples_leaf": [1],
+        "classifier__criterion": ["gini", "entropy"],
+        "classifier__max_depth": [3, 5, None],
+        "classifier__min_samples_leaf": [1, 5, 10],
         "classifier__class_weight": ["balanced"],
     }
 
@@ -372,3 +371,9 @@ class DecisionTreeModelTrainer:
             raise ValueError(
                 "y debe contener exactamente las clases binarias 0 y 1."
             )
+
+
+if __name__ == "__main__":
+    from src.models.cli import run_training
+
+    run_training(DecisionTreeModelTrainer, "decision_tree")

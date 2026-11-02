@@ -1,0 +1,120 @@
+{
+  "aggregate_oof": {
+    "accuracy": 0.9808612440191388,
+    "balanced_accuracy": 0.9793814432989691,
+    "f1": 0.9824561403508771,
+    "precision": 0.9655172413793104,
+    "recall": 1.0,
+    "roc_auc": 1.0
+  },
+  "best_inner_f1": 0.99,
+  "best_params": {
+    "classifier__class_weight": "balanced",
+    "classifier__max_depth": 5,
+    "classifier__min_samples_leaf": 5,
+    "classifier__n_estimators": 50
+  },
+  "combinations": 8,
+  "confusion_matrix_oof": [
+    [
+      93,
+      4
+    ],
+    [
+      0,
+      112
+    ]
+  ],
+  "dataset": "datos_entrenamiento_mastitis-v3.csv",
+  "dataset_sha256": "a9b38d30ef23a6a25ccb6614944482183480e9e892cee2d9cdf2468492c03c9f",
+  "datos": "reales",
+  "farms": 6,
+  "feature_set": "A",
+  "features": [
+    "edad",
+    "raza",
+    "numero_de_partos",
+    "volumen_de_leche",
+    "etapa_de_lactancia",
+    "frecuencia_de_ordeno",
+    "estado_de_vacunacion",
+    "antecedentes_de_mastitis",
+    "humedad",
+    "temperatura",
+    "ph_leche",
+    "conductividad_leche_ms_cm"
+  ],
+  "fits": 238,
+  "folds": [
+    {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "f1": 1.0,
+      "fold": 1,
+      "inner_best_f1": 0.8800000000000001,
+      "precision": 1.0,
+      "recall": 1.0,
+      "test_farms": [
+        "Finca_4"
+      ],
+      "test_rows": 41
+    },
+    {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "f1": 1.0,
+      "fold": 2,
+      "inner_best_f1": 0.8800000000000001,
+      "precision": 1.0,
+      "recall": 1.0,
+      "test_farms": [
+        "Finca_3"
+      ],
+      "test_rows": 41
+    },
+    {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "f1": 1.0,
+      "fold": 3,
+      "inner_best_f1": 0.9333333333333333,
+      "precision": 1.0,
+      "recall": 1.0,
+      "test_farms": [
+        "Finca_2"
+      ],
+      "test_rows": 41
+    },
+    {
+      "accuracy": 1.0,
+      "balanced_accuracy": 1.0,
+      "f1": 1.0,
+      "fold": 4,
+      "inner_best_f1": 0.9,
+      "precision": 1.0,
+      "recall": 1.0,
+      "test_farms": [
+        "Finca_1"
+      ],
+      "test_rows": 41
+    },
+    {
+      "accuracy": 0.9111111111111111,
+      "balanced_accuracy": 0.9230769230769231,
+      "f1": 0.9047619047619048,
+      "fold": 5,
+      "inner_best_f1": 1.0,
+      "precision": 0.8260869565217391,
+      "recall": 1.0,
+      "test_farms": [
+        "Finca_5",
+        "Finca_6"
+      ],
+      "test_rows": 45
+    }
+  ],
+  "model": "random_forest",
+  "rows": 209,
+  "scikit_learn": "1.9.1",
+  "validation": "GroupKFold(5) por finca, búsqueda anidada"
+}
