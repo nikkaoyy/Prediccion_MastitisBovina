@@ -53,3 +53,31 @@ cd mobile && flutter analyze && flutter test  # app (paridad del modelo, SQLite,
 ## Limitaciones conocidas
 
 No hay validación externa ni pruebas en dispositivo físico; el reentrenamiento y la resolución de conflictos de edición no están implementados; el token del dispositivo se guarda en la base local de la app. Detalle en `docs/requisitos.md`.
+
+## El baúl de información (Obsidian)
+
+El conocimiento del proyecto no vive en la cabeza de nadie ni en un chat: vive en una bóveda de Obsidian que se
+versiona junto al código, en `obsidian/ML_Bovinos/`. Cada decisión tiene su nota y su motivo —por qué GroupKFold y no
+un split aleatorio, por qué el modelo de campo es la regla `pH ≤ 6.735`, qué se probó y no funcionó—, y las notas se
+enlazan entre sí para que el contexto no se pierda al cambiar de etapa.
+
+La regla es simple: **una sola fuente de verdad**. Lo que se decide se escribe allí en el momento, con fecha y con la
+cifra que lo respalda; lo que se corrige no se borra, se anota. Así el informe, el artículo y la app beben del mismo
+sitio, y quien retome el proyecto en seis meses entiende por qué está hecho como está sin tener que preguntar.
+
+## Uso ético de la IA
+
+- **Datos de terceros**, con cuidado: los registros de los hatos no llevan identificación de productores y lo que se
+  publica son cifras agregadas.
+- **El modelo no diagnostica.** Estima un riesgo que apoya la decisión del veterinario; el diagnóstico se hace con la
+  prueba en campo. El repositorio lo dice donde se usa, no en letra pequeña.
+- **Se declaran los límites**: 209 observaciones, seis fincas, una región. Un modelo así no se extrapola a otro clima
+  ni a otra raza sin volver a medirlo.
+- **Reproducibilidad** como forma de honestidad: el pipeline, las semillas y las pruebas de paridad están en el repo
+  para que cualquiera pueda repetir las cifras y contradecirlas.
+
+## La app móvil
+
+En `mobile/`: Flutter con SQLite, pensada para el campo. Funciona **sin conexión** —el técnico registra en el potrero,
+no en la oficina— y sincroniza cuando vuelve la red; el servidor de sincronización está en el mismo repositorio. Usa
+`model_lite.json`, una versión reducida del modelo que corre en el teléfono sin depender de un servicio.
