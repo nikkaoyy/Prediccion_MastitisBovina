@@ -8,3 +8,10 @@ artifacts/reports/*.png
 *.db
 server_data.db
 .~lock.*#
+
+# Documentos académicos y del manuscrito: fuera del repo (decidido 2026-11-24)
+artículo.md
+*.docx
+estado_del_arte_PRISMA.md
+guia_metodologica_PRISMA.md
+docs/cambios_articulo.md
